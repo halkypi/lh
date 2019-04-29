@@ -1,0 +1,402 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Intro to Python - NC Legal Hackers</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="NC Legal Hackers">
+<meta property="og:title" content="Intro to Python">
+
+
+  <link rel="canonical" href="http://localhost:4000/intro/">
+  <meta property="og:url" content="http://localhost:4000/intro/">
+
+
+
+  <meta property="og:description" content="Intro to Python">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2019-04-29T03:55:19+00:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "NC Legal Hackers",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="NC Legal Hackers Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">NC Legal Hackers</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/intro/">Intro</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/software/">Software</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/community/">Community</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+
+<nav class="nav__list">
+  
+  <ul>
+    
+      <li>
+        
+          <span class="nav__sub-title">Intro to Python</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/intro/" class="active">Intro to Python</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/intro/turtle/" class="">Turtle Objects</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/intro/ipdb/" class="">Ipython Debugger</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/intro/extra-credit/" class="">Extra Credit</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Intro to Python">
+    <meta itemprop="description" content="Intro to Python">
+    
+    <meta itemprop="dateModified" content="April 28, 2019">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Intro to Python
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#installation" id="markdown-toc-installation">Installation</a>    <ul>
+      <li><a href="#download" id="markdown-toc-download">Download</a></li>
+      <li><a href="#test-installation" id="markdown-toc-test-installation">Test installation</a></li>
+      <li><a href="#first-program" id="markdown-toc-first-program">First program</a></li>
+      <li><a href="#some-good-getting-started-guides" id="markdown-toc-some-good-getting-started-guides">Some good &#8216;getting started&#8217; guides</a></li>
+    </ul>
+  </li>
+  <li><a href="#introduction-to-idle" id="markdown-toc-introduction-to-idle">Introduction to IDLE</a>    <ul>
+      <li><a href="#open-idle" id="markdown-toc-open-idle">Open IDLE</a></li>
+      <li><a href="#first-script" id="markdown-toc-first-script">First script</a></li>
+      <li><a href="#next-steps" id="markdown-toc-next-steps">Next Steps</a></li>
+    </ul>
+  </li>
+</ul>
+
+  </nav>
+</aside>
+
+<p>We&#8217;ll be using Python 3 because it&#8217;s free, powerful, full stack (<a href="https://twitter.com/jakevdp/status/994934052091318272?lang=en">Python is the second-best language for everything</a>) and the <a href="https://www.kaggle.com/learn/python">lingua franca of data science</a>.  There may also be a little <a href="https://www.kaggle.com/learn/sql">SQL</a>.</p>
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="download">Download</h3>
+
+<p>There are different installations out there, Anaconda is awesome but a bit bloated for what we need to get started.  So let&#8217;s install standard Python 3 (Python 2 is being deprecated in 2020) and then use python to install the packages we need as we go (some miniconda stuff).  Navigate to <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a> and download the latest version for your operating system.  Launch the executable, check the <code class="highlighter-rouge">Add Python to Path</code> box and accept the default settings.</p>
+
+<p><img src="https://github.com/halkypi/lh/blob/gh-pages/assets/images/install.gif?raw=true" alt="" /></p>
+
+<h3 id="test-installation">Test installation</h3>
+<p>Open a <a href="https://www.google.com/search?q=how+do+i+open+a+terminal">terminal</a>, type in <code class="highlighter-rouge">python</code> and press enter.  You  should see three chevrons <code class="highlighter-rouge">&gt;&gt;&gt;</code>, see below.  If this doesn&#8217;t work you probably missed the <code class="highlighter-rouge">Add Python to Path</code> box, just reinstall.</p>
+
+<h3 id="first-program">First program</h3>
+
+<p>Type <code class="highlighter-rouge">print("Hello!")</code> at the interactive prompt.  You could also do some basic maths and then <code class="highlighter-rouge">exit()</code> when you&#8217;re ready to move on.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python
+&gt;&gt;&gt; print("Hello!")
+Hello!
+&gt;&gt;&gt; (3 + 2) * 3
+15
+
+</code></pre></div></div>
+<ul>
+  <li>Why doesn&#8217;t it print 9?</li>
+  <li>What would the output from these be?</li>
+</ul>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">3</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">3</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">exit</span><span class="p">()</span>
+<span class="nb">exit</span>
+</code></pre></div></div>
+
+<p><img src="https://github.com/halkypi/lh/blob/gh-pages/assets/images/test-install.gif?raw=true" alt="" /></p>
+
+<h3 id="some-good-getting-started-guides">Some good &#8216;getting started&#8217; guides</h3>
+
+<ul>
+  <li><a href="https://automatetheboringstuff.com/">https://automatetheboringstuff.com/</a>  This is arguably the best resource out there for getting started.  It&#8217;s free to read online and there are some youtube videos.  Al is also a good egg.</li>
+  <li><a href="https://docs.python.org/3/">https://docs.python.org/3/</a>  The docs!  Have a browse, the great thing about python is that everything is in python, the website, even the documentation is maintained with python - see <a href="http://www.sphinx-doc.org/">sphinx</a>.</li>
+  <li><a href="https://docs.python.org/3.3/library/turtle.html?highlight=turtle">https://docs.python.org/3.3/library/turtle.html?highlight=turtle</a>  Everything in python is an object, moving a turtle around makes it much easier to grasp the concept of <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">object oriented programming</a>.  The turtle tutorial has also stood the test of time and is a quick way to learn the data types and the standard library.  Turtle graphics may have its roots in <a href="https://en.wikipedia.org/wiki/Logo_(programming_language)">Logo</a> but it is <a href="https://mitpress.mit.edu/books/turtle-geometry">not just for children</a>!</li>
+</ul>
+
+<p><img src="https://mitpress.mit.edu/sites/default/files/styles/large_book_cover/http/mitp-content-server.mit.edu%3A18180/books/covers/cover/%3Fcollid%3Dbooks_covers_0%26isbn%3D9780262510370%26type%3D.jpg?itok=mTm47Oaz" alt="" /></p>
+
+<h2 id="introduction-to-idle">Introduction to <a href="https://docs.python.org/3/library/idle.html">IDLE</a></h2>
+
+<p>Python is named after the 70&#8217;s comedy show Monty Python so there are many references to famous sketches in &#8216;the docs&#8217; and code.  For example, the package manager or <a href="https://packaging.python.org/tutorials/installing-packages/">pip</a>, is commonly referred to as the <a href="https://www.youtube.com/results?search_query=cheese+shop+sketch+monty+python">&#8216;cheese shop&#8217;</a>.  Most languages have an integrated development environment, or IDE, which programmers use to write and maintain their code.  <strong>Id</strong>l<strong>e</strong> (after <a href="https://en.wikipedia.org/wiki/Eric_Idle">Eric Idle</a>) is the python one that comes with the standard installation.  Some people prefer <a href="https://www.jetbrains.com/pycharm/">PyCharm</a> but a text editor (like <a href="https://notepad-plus-plus.org/download/v7.6.4.html">notepad++</a>, <a href="https://www.sublimetext.com/3">sublime</a> or <a href="https://www.vim.org/download.php">vim</a>) and the terminal also work well.  <a href="https://jupyter.org/">Jupyter notebooks</a> are extremely popular with the data science community.  <a href="https://aws.amazon.com/sagemaker/">Amazon SageMaker</a> comes with Notebooks, machine learning libraries and everything a developer would need to train, build and deploy a solution.</p>
+
+<p>We&#8217;ll stick with <a href="https://docs.python.org/3/library/idle.html">IDLE</a> for now.  It has a decent debugger which means we can step through code, even <a href="https://docs.python.org/3/library/idle.html">IDLE</a>&#8217;s, which is part of the <a href="https://docs.python.org/3/library/tkinter.html#module-tkinter">TKinter module</a>.  Reading or stepping through well written code is one of the quickest ways to gain fluency.</p>
+
+<p>As we look at these different tools it will soon become apparent that there is a python module for just about everything.  So if you are curious about a technology, say web development, try learning <a href="http://flask.pocoo.org/">flask</a>.</p>
+
+<h3 id="open-idle">Open <a href="https://docs.python.org/3/library/idle.html">IDLE</a></h3>
+
+<p>Earlier we ran a program through the python intepreter using the terminal.  Let&#8217;s do the same with <a href="https://docs.python.org/3/library/idle.html">IDLE</a>.  The main appeal of python is this interactive, experimental approach.  It is possible to run complicated programs, load various data structures and then enter <em>interactive mode</em> and explore from there.   Try this out:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your name</span><span class="se">\n</span><span class="s">&gt; "</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Hello"</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+</code></pre></div></div>
+<h3 id="first-script">First script</h3>
+
+<p>Click <code class="highlighter-rouge">File &gt; New File</code>.  You should now have the interpreter (or shell) next to an untitled text file.  Put them side by side and rename the <code class="highlighter-rouge">File &gt; Save As</code> <code class="highlighter-rouge">hello</code> in a new directory named <code class="highlighter-rouge">code</code> in your home directory.  You&#8217;ll notice <a href="https://docs.python.org/3/library/idle.html">IDLE</a> automatically adds the .py extension.  Save the file and <code class="highlighter-rouge">Run &gt; Run Module</code> or <code class="highlighter-rouge">F5</code> to execute.  You should see:</p>
+
+<p><img src="/lh/images/img0.png?raw=true" alt="img0" />
+<a href="/lh/images/img0.png">view</a></p>
+
+<h3 id="next-steps">Next Steps</h3>
+
+<ul>
+  <li>Read and complete the exercises in chapters 1 through 6 of <a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a></li>
+  <li>Review the <a href="https://youtu.be/1F_OgqRuSdI">accompanying playlist</a></li>
+  <li>Move on to <a href="https://halkypi.github.io/lh/turtle-objects/">Turtle - an intro to python objects</a></li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-04-28">April 28, 2019</time></p>
+        
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="http://localhost:4000/intro/turtle/" class="pagination--pager" title="Turtle Objects
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+    
+      <li><i class="fa fa-fw fa-github" aria-hidden="true"></i> This site is organized in the open on GitHub. <a href="https://github.com/halkypi/lh">Suggest changes.</a></li>
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>
+

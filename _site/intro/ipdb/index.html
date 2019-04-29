@@ -1,0 +1,529 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Ipython Debugger - NC Legal Hackers</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="NC Legal Hackers">
+<meta property="og:title" content="Ipython Debugger">
+
+
+  <link rel="canonical" href="http://localhost:4000/intro/ipdb/">
+  <meta property="og:url" content="http://localhost:4000/intro/ipdb/">
+
+
+
+  <meta property="og:description" content="Ipython Debugger">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2019-04-29T03:55:19+00:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "NC Legal Hackers",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="NC Legal Hackers Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">NC Legal Hackers</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/intro/">Intro</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/software/">Software</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/community/">Community</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+
+<nav class="nav__list">
+  
+  <ul>
+    
+      <li>
+        
+          <span class="nav__sub-title">Intro to Python</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/intro/" class="">Intro to Python</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/intro/turtle/" class="">Turtle Objects</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/intro/ipdb/" class="active">Ipython Debugger</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/intro/extra-credit/" class="">Extra Credit</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Ipython Debugger">
+    <meta itemprop="description" content="Ipython Debugger">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Ipython Debugger
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#running-the-ipython-debugger-ipbd-from-the-command-line" id="markdown-toc-running-the-ipython-debugger-ipbd-from-the-command-line">Running the ipython debugger (ipbd) from the command line</a></li>
+  <li><a href="#commands" id="markdown-toc-commands">Commands</a></li>
+  <li><a href="#exploring-methods" id="markdown-toc-exploring-methods">Exploring methods</a></li>
+  <li><a href="#restart-and-explore" id="markdown-toc-restart-and-explore">Restart and explore</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<h2 id="running-the-ipython-debugger-ipbd-from-the-command-line">Running the ipython debugger (ipbd) from the command line</h2>
+
+<p>This is meant to be an interactive session.  Follow the steps below:</p>
+
+<ul>
+  <li>Download <code class="highlighter-rouge">demo.py</code> from: <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/halkypi/lh/blob/gh-pages/assets/code/demo.py" target="_blank">here</a>
+This has been copied from the <code class="highlighter-rouge">lib/python3.6/turtle.py</code>, ie the main turtle module.</li>
+  <li>Download a text editor like <a href="https://notepad-plus-plus.org/">notepad++</a> or <a href="https://www.sublimetext.com/">sublime</a> and view the file</li>
+  <li>Open a terminal and: <code class="highlighter-rouge">pip install ipdb</code></li>
+  <li>Navigate to the directory where <code class="highlighter-rouge">demo.py</code> is saved and launch the ipython debugger</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python -m ipdb demo.py
+
+&gt; /Users/halkypi/Downloads/demo.py(2)&lt;module&gt;()
+      1 # Demos taken from: lib/python3.6/turtle.py
+----&gt; 2 from turtle import *
+      3 import time
+</code></pre></div></div>
+
+<p>Typing <code class="highlighter-rouge">help</code> or <code class="highlighter-rouge">h</code> will open the help topics.  A number of commands have aliases, for example:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ipdb&gt; h h
+
+h(elp)
+        Without argument, print the list of available commands.
+        With a command name as argument, print help about that command.
+        "help pdb" shows the full pdb documentation.
+        "help exec" gives help on the ! command.
+
+ipdb&gt; h c
+
+c(ont(inue))
+        Continue execution, only stop when a breakpoint is encountered.
+</code></pre></div></div>
+<h2 id="commands">Commands</h2>
+
+<p>The help menu lists all the commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ipdb&gt; h
+
+Documented commands (type help &lt;topic&gt;):
+========================================
+EOF    cl         disable  interact  next    psource  rv         unt
+a      clear      display  j         p       q        s          until
+alias  commands   down     jump      pdef    quit     source     up
+args   condition  enable   l         pdoc    r        step       w
+b      cont       exit     list      pfile   restart  tbreak     whatis
+break  continue   h        ll        pinfo   return   u          where
+bt     d          help     longlist  pinfo2  retval   unalias
+c      debug      ignore   n         pp      run      undisplay
+</code></pre></div></div>
+
+<p>The commands we need to execute the code are:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">command</th>
+      <th style="text-align: left">description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">list, l</td>
+      <td style="text-align: left">show lines around current step</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">longlist, l</td>
+      <td style="text-align: left">show more lines than list</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">continue, cont, c</td>
+      <td style="text-align: left">execute each line until next breakpoint</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">break, b</td>
+      <td style="text-align: left">display or set breakpoint</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">enable, disable</td>
+      <td style="text-align: left">enable or disable breakpoints</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">clear, cl</td>
+      <td style="text-align: left">clear bp</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">next, n</td>
+      <td style="text-align: left">execute line, functions are stepped over</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">step, s</td>
+      <td style="text-align: left">execute line, functions are stepped into</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">until, unt</td>
+      <td style="text-align: left">run until linenumber</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">return, r</td>
+      <td style="text-align: left">execute each line until function returns (step out)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">restart, run</td>
+      <td style="text-align: left">restart the program</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">exit</td>
+      <td style="text-align: left">exit the debugger</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Run the <code class="highlighter-rouge">help</code> or <code class="highlighter-rouge">h</code> command on <code class="highlighter-rouge">l</code> and <code class="highlighter-rouge">ll</code> then run them in the console.</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ipdb&gt; h l
+ipdb&gt; h ll
+ipdb&gt; l
+ipdb&gt; ll
+</code></pre></div></div>
+
+<p><img src="/lh/images/ipdb0.png?raw=true" alt="ipdb0" width="500px" /></p>
+
+<ul>
+  <li>Enter <code class="highlighter-rouge">c</code> and watch the program <code class="highlighter-rouge">continue</code> to the end</li>
+  <li>Enter <code class="highlighter-rouge">run</code> to <code class="highlighter-rouge">restart</code> the program</li>
+  <li>Enter <code class="highlighter-rouge">h b</code> and read the <code class="highlighter-rouge">break</code> info</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ipdb&gt; h b
+
+b(reak) [ ([filename:]lineno | function) [, condition] ]
+Without argument, list all breaks.
+
+With a line number argument, set a break at this line in the
+current file.  With a function name, set a break at the first
+executable line of that function.  If a second argument is
+present, it is a string specifying an expression which must
+to true before the breakpoint is honored.
+
+line number may be prefixed with a filename and a colon,
+to specify a breakpoint in another file (probably one that
+hasn't been loaded yet).  The file is searched for on
+sys.path; the .py suffix may be omitted.  
+</code></pre></div></div>
+
+<ul>
+  <li>Repeat this for <code class="highlighter-rouge">enable</code>, <code class="highlighter-rouge">disable</code> and <code class="highlighter-rouge">clear</code></li>
+  <li>Set a break point for demo2()</li>
+  <li><code class="highlighter-rouge">continue</code> to the <code class="highlighter-rouge">break</code></li>
+</ul>
+
+<p><img src="/lh/images/ipdb1.png?raw=true" alt="ipdb1" width="500px" /></p>
+
+<ul>
+  <li>Enter <code class="highlighter-rouge">n</code> to execute the <code class="highlighter-rouge">next</code> line</li>
+  <li>Press <code class="highlighter-rouge">&lt;Enter&gt;</code> or <code class="highlighter-rouge">&lt;Return&gt;</code> again to execute the last command</li>
+  <li>Keep pressing enter and watch each line being executed until the <code class="highlighter-rouge">for</code> loop on line 72.</li>
+  <li>Enter <code class="highlighter-rouge">p _</code> to <code class="highlighter-rouge">print</code> the number stored in the <code class="highlighter-rouge">_</code> value</li>
+</ul>
+
+<p>The <code class="highlighter-rouge">_</code> underscore is a throwaway variable because it doesn&#8217;t mean anything once the <code class="highlighter-rouge">for</code> loop has finished.</p>
+
+<ul>
+  <li>Break out of the loop by entering <code class="highlighter-rouge">until 75</code></li>
+</ul>
+
+<p><img src="/lh/images/ipdb2.png?raw=true" alt="ipdb2" width="800px" /></p>
+
+<h2 id="exploring-methods">Exploring methods</h2>
+
+<p>The program enters a <a href="https://www.youtube.com/watch?v=885qKiiKisI&amp;feature=youtu.be">while</a> loop on line 76.</p>
+
+<ul>
+  <li>Take a look at the <code class="highlighter-rouge">help</code> for <code class="highlighter-rouge">pdoc</code> and <code class="highlighter-rouge">pinfo</code> which provides information on a method</li>
+  <li>Have a look at the docstrings for <code class="highlighter-rouge">undobufferentries</code> and <code class="highlighter-rouge">undo</code> then enter <code class="highlighter-rouge">s</code> to <code class="highlighter-rouge">step</code> into the function</li>
+  <li>Once the function is called enter <code class="highlighter-rouge">ll</code> to view the <code class="highlighter-rouge">lib/python3.6/turtle.py(2603)undobufferentries()</code> source code</li>
+</ul>
+
+<p>If we <code class="highlighter-rouge">print</code> the value we can see it is a buffer of all the entries in the <code class="highlighter-rouge">undobuffer</code>.  The function returns <code class="highlighter-rouge">0</code> when the buffer reaches <code class="highlighter-rouge">None</code>, otherwise it returns the count of entries.</p>
+
+<p><img src="/lh/images/ipdb3.png?raw=true" alt="ipdb3" width="500px" /></p>
+
+<ul>
+  <li>Enter <code class="highlighter-rouge">r</code> so the <code class="highlighter-rouge">undobufferentries()</code> function returns and <code class="highlighter-rouge">step</code> into the <code class="highlighter-rouge">undo()</code> function</li>
+  <li>Note the example uses a <code class="highlighter-rouge">range(8)</code> instead of the number of entries in the buffer</li>
+</ul>
+
+<p><img src="/lh/images/ipdb4.png?raw=true" alt="ipdb4" width="500px" /></p>
+
+<p>The <code class="highlighter-rouge">while</code> loop iterates through entries in the buffer and executes <code class="highlighter-rouge">undo()</code> on them until it hits <code class="highlighter-rouge">None</code>.  The buffer then returns <code class="highlighter-rouge">0</code> or <code class="highlighter-rouge">False</code> which breaks the loop.</p>
+
+<ul>
+  <li>Enter <code class="highlighter-rouge">return</code> to step out of <code class="highlighter-rouge">undo</code> and enter <code class="highlighter-rouge">n</code> to move to the next line.  Hold down the <code class="highlighter-rouge">&lt;Enter&gt;</code> key to watch it <code class="highlighter-rouge">undo()</code> the buffer</li>
+</ul>
+
+<h2 id="restart-and-explore">Restart and explore</h2>
+
+<ul>
+  <li><code class="highlighter-rouge">restart</code> the program</li>
+  <li><code class="highlighter-rouge">clear</code> the breakpoint and use <code class="highlighter-rouge">n</code>, <code class="highlighter-rouge">s</code> and <code class="highlighter-rouge">r</code> to step through the program and explore methods</li>
+  <li>Browse turtle documentation and note examples come from the docs strings in the source code:  <a href="https://docs.python.org/3.3/library/turtle.html">https://docs.python.org/3.3/library/turtle.html</a></li>
+  <li>Comment out <code class="highlighter-rouge">demo2()</code> in <code class="highlighter-rouge">demo.py</code> and run <code class="highlighter-rouge">demo1()</code></li>
+  <li>Step through <code class="highlighter-rouge">peace.py</code> in the turtledemo module</li>
+</ul>
+
+<p>With these simple tools it is possible to look under the hood, explore code, run examples and become fluent in any python package.  All it takes is a curious mind and some interactive exploration!</p>
+
+<p>Next, we&#8217;ll add some data wrangling tools to the lab.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+        
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/intro/turtle/" class="pagination--pager" title="Turtle Objects
+">Previous</a>
+    
+    
+      <a href="http://localhost:4000/intro/extra-credit/" class="pagination--pager" title="Extra Credit
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+    
+      <li><i class="fa fa-fw fa-github" aria-hidden="true"></i> This site is organized in the open on GitHub. <a href="https://github.com/halkypi/lh">Suggest changes.</a></li>
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>
+

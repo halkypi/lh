@@ -1,0 +1,667 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Turtle Objects - NC Legal Hackers</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="NC Legal Hackers">
+<meta property="og:title" content="Turtle Objects">
+
+
+  <link rel="canonical" href="http://localhost:4000/intro/turtle/">
+  <meta property="og:url" content="http://localhost:4000/intro/turtle/">
+
+
+
+  <meta property="og:description" content="Everything in Python is an object">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2019-04-29T03:55:19+00:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "NC Legal Hackers",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="NC Legal Hackers Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">NC Legal Hackers</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/intro/">Intro</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/software/">Software</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/community/">Community</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+
+<nav class="nav__list">
+  
+  <ul>
+    
+      <li>
+        
+          <span class="nav__sub-title">Intro to Python</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/intro/" class="">Intro to Python</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/intro/turtle/" class="active">Turtle Objects</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/intro/ipdb/" class="">Ipython Debugger</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/intro/extra-credit/" class="">Extra Credit</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Turtle Objects">
+    <meta itemprop="description" content="Everything in Python is an object">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Turtle Objects
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#introduction-to-python-objects-through-turtle-graphics" id="markdown-toc-introduction-to-python-objects-through-turtle-graphics">Introduction to python objects through Turtle graphics</a></li>
+  <li><a href="#resources" id="markdown-toc-resources">Resources</a></li>
+  <li><a href="#importing-the-zen-of-python" id="markdown-toc-importing-the-zen-of-python">Importing the Zen of python</a></li>
+  <li><a href="#import-turtle" id="markdown-toc-import-turtle">Import turtle</a></li>
+  <li><a href="#turtle-demo" id="markdown-toc-turtle-demo">Turtle demo</a></li>
+  <li><a href="#debug-yinyangpy" id="markdown-toc-debug-yinyangpy">Debug yinyang.py</a></li>
+  <li><a href="#next-steps" id="markdown-toc-next-steps">Next Steps</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<h2 id="introduction-to-python-objects-through-turtle-graphics">Introduction to python objects through Turtle graphics</h2>
+<p>Everything in Python is an object.  We&#8217;ll explore basic object types using the turtle <a href="https://docs.python.org/3/library/turtle.html#module-turtledemo">demo</a> because it:</p>
+<ul>
+  <li>can be boring to learn building blocks without making anything</li>
+  <li>helps to visualize abstract concepts with concrete examples</li>
+</ul>
+
+<p>It is also good to reinforce the principle that it is possible to learn topics of interest through python packages.  Again, we&#8217;ll use IDLE, not because it is the best development environment in the world, but because it&#8217;s written in python and cross platform.</p>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+  <li><a href="https://www.amazon.com/gp/product/0262510375">Turtle Geometry: The Computer as a Medium for Exploring Mathematics - Artificial Intelligence</a></li>
+  <li><a href="https://dspace.mit.edu/bitstream/handle/1721.1/41158/AI_WP_214.pdf?sequence=4">MIT AI Lab - Logo Turtle Graphics for the Lisp Machine</a></li>
+  <li><a href="https://docs.python.org/3.3/library/turtle.html?highlight=turtle">Turtle docs</a></li>
+</ul>
+
+<h2 id="importing-the-zen-of-python">Importing the Zen of python</h2>
+
+<p>Python modules or programs are also objects and can imported.  Try:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import this
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+</code></pre></div></div>
+
+<h2 id="import-turtle">Import turtle</h2>
+
+<p>Importing turtle can be done in the same way.  The module is written using the gui package <a href="https://docs.python.org/3/library/tkinter.html">tkinter</a>.  Let&#8217;s view and interact with a turtle object through IDLE.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">turtle</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">mode</span><span class="p">(</span><span class="s">'logo'</span><span class="p">)</span>
+<span class="n">showturtle</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>This opens a window and shows the turtle in logo mode.  The motion and drawing commands are:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">command</th>
+      <th style="text-align: left">alias</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">showturtle()</td>
+      <td style="text-align: left">st()</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">hideturtle()</td>
+      <td style="text-align: left">ht()</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">forward()</td>
+      <td style="text-align: left">fd()</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">backward()</td>
+      <td style="text-align: left">bk()</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">rightturn()</td>
+      <td style="text-align: left">rt()</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">leftturn()</td>
+      <td style="text-align: left">lt()</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">penup()</td>
+      <td style="text-align: left">pu()</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">pendown()</td>
+      <td style="text-align: left">pd()</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Try this simple example in the Shell</li>
+</ul>
+
+<p><img src="/lh/images/turtle0.png?raw=true" alt="0" /></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from turtle import *
+mode('logo')
+st()
+fd(100)
+rt(90)
+fd(150)
+lt(45)
+bk(100)
+lt(45)
+pu()
+fd(100)
+</code></pre></div></div>
+
+<ul>
+  <li>Copy shapes.py below into a new file and run through the examples</li>
+</ul>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># shapes.py</span>
+<span class="kn">from</span> <span class="nn">turtle</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">mode</span><span class="p">(</span><span class="s">'logo'</span><span class="p">)</span>
+<span class="n">reset</span><span class="p">()</span>
+
+<span class="c"># This is a comment</span>
+<span class="s">""" This is
+a multi line
+comment
+"""</span>
+<span class="c">## see Format for comment toggling options</span>
+
+<span class="c"># Make a square</span>
+
+<span class="c">##fd(100)</span>
+<span class="c">##rt(90)</span>
+<span class="c">##fd(100)</span>
+<span class="c">##rt(90)</span>
+<span class="c">##fd(100)</span>
+<span class="c">##rt(90)</span>
+<span class="c">##fd(100)</span>
+<span class="c">##rt(90)</span>
+
+<span class="c"># Defining a Function</span>
+
+<span class="k">def</span> <span class="nf">square</span><span class="p">():</span>           <span class="c"># indentation matters in python</span>
+    <span class="n">fd</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">rt</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+    <span class="n">fd</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">rt</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+    <span class="n">fd</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">rt</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+    <span class="n">fd</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">rt</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+
+<span class="c">## square()</span>
+
+<span class="c"># Iterating with the range() function</span>
+
+<span class="c">## help(range)</span>
+<span class="c">## range(4)</span>
+<span class="c">## for i in range(4): print(i)</span>
+<span class="c">## for spam in range(4): print(spam)</span>
+<span class="c">## for spam in range(4): print("eggs!")</span>
+<span class="c">## for spam in "eggs": print(spam)</span>
+
+<span class="k">def</span> <span class="nf">square</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>  
+        <span class="n">fd</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>         <span class="c"># nested indentation</span>
+        <span class="n">rt</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+
+<span class="c"># square()</span>
+
+<span class="c"># Pass in an argument</span>
+
+<span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>  
+        <span class="n">fd</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>         
+        <span class="n">rt</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+
+<span class="c">##square(200)</span>
+
+<span class="k">def</span> <span class="nf">triangle</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+        <span class="n">fd</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="n">rt</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
+
+<span class="c">##triangle(100)</span>
+
+<span class="k">def</span> <span class="nf">polygon</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">sides</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">sides</span><span class="p">):</span>
+        <span class="n">fd</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="n">rt</span><span class="p">(</span><span class="mi">360</span> <span class="o">/</span> <span class="n">sides</span><span class="p">)</span>
+
+<span class="c">##polygon(100, 5)</span>
+
+<span class="k">def</span> <span class="nf">house</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+    <span class="n">square</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+    <span class="n">fd</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+    <span class="n">rt</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+    <span class="n">triangle</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+
+<span class="c">##house(100)</span>
+
+<span class="k">def</span> <span class="nf">boxes</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+            <span class="n">fd</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+            <span class="n">rt</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+        <span class="n">rt</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="c">##boxes(100)</span>
+
+<span class="k">def</span> <span class="nf">star</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+        <span class="n">fd</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="n">rt</span><span class="p">(</span><span class="mi">144</span><span class="p">)</span>
+        <span class="n">fd</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="n">lt</span><span class="p">(</span><span class="mi">72</span><span class="p">)</span>
+
+<span class="c">##star(100)</span>
+
+<span class="k">def</span> <span class="nf">star_group</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+        <span class="n">star</span><span class="p">(</span><span class="n">size</span> <span class="o">/</span> <span class="mf">4.0</span><span class="p">)</span>
+        <span class="n">pu</span><span class="p">()</span>
+        <span class="n">fd</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="n">pd</span><span class="p">()</span>
+        <span class="n">rt</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="c">##speed(0) # 1 = slow, 10 = fast, 0 = fastest</span>
+<span class="c">##star_group(100)</span>
+
+<span class="k">def</span> <span class="nf">super_star_group</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+        <span class="n">star_group</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="n">pu</span><span class="p">()</span>
+        <span class="n">fd</span><span class="p">(</span><span class="n">size</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">)</span>
+        <span class="n">pd</span><span class="p">()</span>
+        <span class="n">rt</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+
+<span class="c">##speed(0)  </span>
+<span class="c">##super_star_group(100)</span>
+</code></pre></div></div>
+<h2 id="turtle-demo">Turtle demo</h2>
+
+<p>In the IDLE shell go to: <code class="highlighter-rouge">Help &gt; Turtle Demo</code> and run through the examples.</p>
+
+<p><img src="/lh/images/turtle1.png?raw=true" alt="1" /></p>
+
+<h2 id="debug-yinyangpy">Debug yinyang.py</h2>
+
+<ul>
+  <li>copy the script from the final example to the clipboard</li>
+  <li>paste into a <code class="highlighter-rouge">File &gt; New File</code></li>
+  <li>save in the code directory</li>
+  <li>turn on <code class="highlighter-rouge">Debug &gt; Debugger</code></li>
+  <li>check the Source and Globals boxes</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">button</th>
+      <th style="text-align: left">description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Go</td>
+      <td style="text-align: left">execute each line until next breakpoint</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Step</td>
+      <td style="text-align: left">execute line, functions are called</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Over</td>
+      <td style="text-align: left">execute line, functions are stepped over</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Out</td>
+      <td style="text-align: left">execute each line until next return</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>run the program, set a breakpoint and click Go</li>
+  <li>clear breakpoint, run the program, and continue to click <code class="highlighter-rouge">over</code> until the program completes</li>
+  <li>run the program again but this time <code class="highlighter-rouge">step</code> into the <code class="highlighter-rouge">main()</code> function on line 48</li>
+  <li>step into the reset() call on line 41</li>
+</ul>
+
+<p>Notice the reset() function is not defined in yinyang.py but turtle.py instead.  To view this file go to <code class="highlighter-rouge">File &gt; Open Module</code>.</p>
+
+<p><img src="/lh/images/open-module.png?raw=true" alt="open-module" /></p>
+
+<p><img src="/lh/images/open-module2.png?raw=true" alt="open-module2" /></p>
+
+<p><img src="/lh/images/open-module3.png?raw=true" alt="open-module3" /></p>
+
+<ul>
+  <li>continue to <code class="highlighter-rouge">step</code> through the code until the <strong>init</strong>.py file within the tkinter module opens.</li>
+  <li>use the step <code class="highlighter-rouge">out</code> button to return to the reset() call and <code class="highlighter-rouge">step</code> into it again.</li>
+</ul>
+
+<p>This time the debugger goes to the turtle.reset() call.</p>
+<ul>
+  <li>read through the reset() documentation in the comments</li>
+</ul>
+
+<p>This is where python documentation is mastered, right there in the code.</p>
+<ul>
+  <li>browse through turtle.py, locate other key yinyang functions and browse the documentation</li>
+</ul>
+
+<p>This exercise is meant to be iterative, it will involve interacting with the <code class="highlighter-rouge">step</code>, <code class="highlighter-rouge">over</code> and <code class="highlighter-rouge">out</code> buttons in the debugger.  Step through all the yingyang code and get a sense for how it is working.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>backward()
+begin_fill()
+circle()
+color()
+down()
+end_fill()
+forward()
+left()
+right()
+up()
+width()
+</code></pre></div></div>
+<ul>
+  <li>Read through <a href="http://inventwithpython.com/invent4thed/chapter6.html">Al&#8217;s description</a> of the debugger.</li>
+</ul>
+
+<h2 id="next-steps">Next Steps</h2>
+
+<p>There are many, many <a href="https://wiki.python.org/moin/PythonBooks">excellent books</a> written on python.  One of the quickest ways to become fluent is to read well written code (ie the standard library) and interact with it.  Next we&#8217;ll look at the command line and the <a href="https://github.com/gotcha/ipdb">ipython debugger idpb&#8230;</a></p>
+
+<ul>
+  <li>Do not fear the command line, there is no avoiding it in the open source world</li>
+  <li>Get into Linux too, there is no avoiding that either</li>
+  <li>Check out the Software Carpentry Foundation: <a href="https://swcarpentry.github.io/shell-novice/">https://swcarpentry.github.io/shell-novice/</a></li>
+</ul>
+
+<p><img src="https://img.photobucket.com/albums/v647/vtel57/NSBLog/cli-fear_shot.jpg" alt="command-line" /></p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+        
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/intro/" class="pagination--pager" title="Intro to Python
+">Previous</a>
+    
+    
+      <a href="http://localhost:4000/intro/ipdb/" class="pagination--pager" title="Ipython Debugger
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+    
+      <li><i class="fa fa-fw fa-github" aria-hidden="true"></i> This site is organized in the open on GitHub. <a href="https://github.com/halkypi/lh">Suggest changes.</a></li>
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>
+
