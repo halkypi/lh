@@ -17,7 +17,7 @@ We'll be using Python 3 because it's free, powerful, full stack ([Python is the 
 
 There are different installations out there, Anaconda is awesome but a bit bloated for what we need to get started.  So let's install standard Python 3 (Python 2 is being deprecated in 2020) and then use python to install the packages we need as we go (some miniconda stuff).  Navigate to [https://www.python.org/downloads/](https://www.python.org/downloads/) and download the latest version for your operating system.  Launch the executable, check the `Add Python to Path` box and accept the default settings.
 
-![](https://github.com/halkypi/lh/blob/gh-pages/assets/images/install.gif?raw=true)
+![](/lh/images/install.gif?raw=true)
 
 ### Test installation
 Open a [terminal](https://www.google.com/search?q=how+do+i+open+a+terminal), type in `python` and press enter.  You  should see three chevrons `>>>`, see below.  If this doesn't work you probably missed the `Add Python to Path` box, just reinstall. 
@@ -44,7 +44,7 @@ Hello!
 exit
 ```
 
-![](https://github.com/halkypi/lh/blob/gh-pages/assets/images/test-install.gif?raw=true)
+![](/lh/images/test-install.gif?raw=true)
 
 ### Some good 'getting started' guides
 
@@ -81,4 +81,4 @@ Click `File > New File`.  You should now have the interpreter (or shell) next to
 
 *    Read and complete the exercises in chapters 1 through 6 of [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
 *    Review the [accompanying playlist](https://youtu.be/1F_OgqRuSdI)
-*    Move on to [Turtle - an intro to python objects](https://halkypi.github.io/lh/turtle-objects/)
+*    Move on to [Turtle - an intro to python objects](https://halkypi.github.io/lh/turtle/)
