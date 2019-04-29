@@ -1,0 +1,320 @@
+1  -inf
+1  .at
+1  .axes
+1  .columns
+1  .iat
+1  .iloc
+1  .index
+1  .ix
+1  .loc
+1  .name
+1  .ndim
+1  .shape
+1  .size
+3  A/B testing
+7  AI
+2  API
+2  Alexa
+5  Amazon AWS
+3  AngularJS
+2  Argument (Parameter)
+2  Array indexing
+5  Athena
+2  Attribute access
+6  Aurora
+3  BabelNet
+3  Bayes' Theorem
+3  Bayesian network
+2  Boolean True/False
+2  Boolean value/variable
+2  Built-in function (BIF)
+2  C-style (row-major)
+1  CPU
+4  CRUD
+2  Class
+1  Coercion
+1  Collection
+1  Conditional statements/expressions
+1  Container
+3  D3
+4  DCG
+2  DTD
+6  Data I/O
+1  Default Constant
+8  Dictionaries
+3  Docstring
+4  DynamoDB
+2  Echo
+2  Explicit type coercion
+2  Falsy
+2  First-class function
+3  Fortran-style (column-wise)
+2  Function
+2  GIGO
+2  GPU
+4  Google Cloud Platform
+4  Hadoop
+2  Half-open interval
+2  Hashable
+2  Heterogenous
+2  Homogenous
+2  IBM Watson
+2  Immutable
+2  Index access
+2  IndexError
+2  Inner Joins
+2  Integer-based Indexing and Slicing
+2  Iteration (Looping)
+2  JSON
+2  JSON Array
+2  JSON Object
+3  JavaScript
+4  LDA
+4  LSA
+2  LTR
+2  LXML
+2  Label-based Indexing and Slicing
+8  Lambda
+9  Left Joins
+3  Lists
+2  Looker
+1  MATLAB
+1  Machine translation
+2  Many-to-one joins
+3  Map (un-ordered collection of paired objects)
+1  MarkLogic
+2  Markov Chain
+2  Mean Absolute Error
+2  Mean Squared Error
+2  Microsoft Azure
+2  Monte Carlo method
+2  Multi-dimensioinal indexing
+2  Multi-dimensional Slicing
+2  Mutable
+2  NA
+2  NER
+8  NLP
+2  NaN
+3  NoSQL
+2  None
+6  NumPy
+6  NumPy Array
+7  Ontology (information science)
+5  Outer Joins
+3  P value
+4  PHP
+3  PageRank
+4  Pandas
+4  Pandas DataFrame
+4  Pandas Index
+4  Pandas Object
+4  Pandas Panel
+4  Pandas Series
+4  Pandas two-level indexing and slicing
+3  Parameter
+8  Perl
+4  Poisson distribution
+9  Python
+7  R
+4  RAM
+3  RDS
+6  Redshift
+7  Right Joins
+2  Root Mean Squared Error
+7  Ruby
+2  S curve
+4  S3
+4  SAS
+4  SPSS
+9  SQL
+4  Scalable Automated Linking Technology (SALT)
+2  Sequence
+2  Sequence (ordered collection of objects)
+2  Set (un-ordered collection of objects)
+2  Sets
+2  Slicing
+8  Spark
+2  Stata
+2  Striding
+2  Strings
+2  Subarray Copy
+2  Subarray View
+6  Tableau
+8  TensorFlow
+2  Truthy
+2  Tuple unpacking
+2  Tuples
+9  Turing Test
+2  Type
+4  Unittest
+2  Upcast
+1  Vectorized Operations
+1  Web Services
+1  XLST
+3  XML
+2  algorithm
+4  artificial intelligence
+3  axis
+2  backpropagation
+2  bias
+4  big data
+4  binomial distribution
+4  blockchain database
+4  chatbot
+4  chi-square test
+5  classification
+3  cloud computing
+7  clustering
+4  coefficient
+5  cognitive computing
+2  column-oriented database
+5  computational linguistics
+2  confidence interval
+2  continuous variable
+2  coreference resolution
+2  correlation
+2  covariance
+2  cross-validation
+2  data cleansing
+2  data engineer
+4  data mining
+4  data science
+3  data structure
+2  data wrangling
+2  database
+2  database management system
+4  decision trees
+4  deep learning
+4  dependent variable
+6  dict()
+4  dimension reduction
+3  dir()
+2  dir([obj])
+5  discounted cumulative gain
+3  discourse analysis
+5  discrete variable
+3  elasticsearch
+2  enumerate(iterable, start)
+2  feature
+2  feature engineering
+2  file()
+2  float()
+2  format(value, format_spec)
+2  getattr()
+4  git
+4  github
+2  globals()
+2  gradient boosting
+2  gradient descent
+2  graph database
+2  hash
+2  help()
+2  hidden layer
+2  histogram
+2  hyperparameter
+2  id()
+2  independent variable
+2  inf
+2  input()
+2  int()
+2  isinstance(obj, class)
+3  k-means clustering
+3  k-nearest neighbors
+9  knowledge graph
+8  latent dirichlet allocation
+7  latent semantic analysis
+2  latent variable
+7  learning to rank
+2  len()
+2  lift
+2  linear algebra
+2  linear regression
+2  list()
+2  logarithm
+2  logistic regression
+5  lucene
+8  machine learning
+4  matrix
+2  max()
+1  mean
+1  median
+1  min()
+1  mode
+4  model
+2  moving average
+6  n-gram
+7  naive Bayes classifier
+5  named entity recognition
+9  natural language processing
+9  neural network
+2  next()
+3  normal distribution
+2  null hypothesis
+2  objective function
+2  open information extraction
+9  open source software
+2  open()
+3  outlier
+5  overfitting
+7  part of speech tagging
+3  perceptron
+4  pivot table
+3  posterior distribution
+3  precision
+4  predictive analytics
+3  predictive coding
+3  predictive modeling
+3  principal component analysis
+2  print()
+2  prior distribution
+2  probability distribution
+2  quantile, quartile
+2  random forest
+2  random-access memory
+1  range()
+3  range(start, stop, step)
+3  raw_input()
+5  recall
+5  regression
+6  reinforcement learning
+4  relational database
+3  repr()
+2  reversed()
+2  scalar
+4  scripting
+4  search engine
+4  semantic search
+4  sentence breaking
+4  sentiment analysis
+4  serial correlation
+2  set()
+3  shell
+3  slice()
+8  solr
+2  sorted()
+3  spatiotemporal data
+3  standard deviation
+3  standard normal distribution
+3  standardized score
+2  str()
+3  strata, stratified sampling
+2  sum(iterable, start)
+6  supervised learning
+5  support vector machine
+5  t-distribution
+2  test data
+5  tf-idf
+2  time series data
+5  topic modeling
+7  training data
+2  tuple()
+1  type()
+5  unsupervised learning
+2  variance
+1  vars()
+2  vector
+3  vector space
+3  word segmentation
+9  word2vec
+8  wordnet
+3  zip()

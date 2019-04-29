@@ -3,7 +3,8 @@ layout: splash
 permalink: /
 header:
   overlay_color: "#5e616c"
-  overlay_image: lincoln.jpg
+#  overlay_image: lincoln.jpg
+  overlay_image: blue-ridge.jpg
   cta_label: "Join Us!"
   cta_url: "/community/"
   caption:
@@ -14,9 +15,9 @@ feature_row:
     title: "Data science 101 for lawyers"
     excerpt: "This is an introduction to data wrangling for legal hackers.  The material has been put together by lawyers for lawyers so we can learn to swim more efficiently in data..."
     url: "/101/"
-    btn_label: "101"
+    btn_label: "Learn More"
 
-  - image_path: python.jpg
+  - image_path: wordcloud.jpg
     alt: "Intro to Python"
     title: "Intro to Python"
     excerpt: "Python is free and extremely well supported by a vibrant open source community.  Not only is it the lingua franca of data science but arguably the second best languge for everything else..."
