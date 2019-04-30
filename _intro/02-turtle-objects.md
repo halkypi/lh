@@ -10,8 +10,10 @@ excerpt: "Everything in Python is an object"
 
 ## Introduction to python objects through Turtle graphics
 Everything in Python is an object.  We'll explore basic object types using the turtle [demo](https://docs.python.org/3/library/turtle.html#module-turtledemo) because it:
-*   can be boring to learn building blocks without making anything
-*   helps to visualize abstract concepts with concrete examples
+
+*   has stood the test of time
+*   it can be boring to learn building blocks without making anything
+*   it helps to visualize abstract concepts with concrete examples
 
 It is also good to reinforce the principle that it is possible to learn topics of interest through python packages.  Again, we'll use IDLE, not because it is the best development environment in the world, but because it's written in python and cross platform.  
 
