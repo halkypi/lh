@@ -1,12 +1,23 @@
 ---
-title: "Setup"
-permalink: /tour/setup/
+title: "Tour"
+permalink: /tour/
 published: true
 ---
-# Setup
+## Setup
 {% include base_path %}
 
 {% include toc %}
+
+For the tour of the scientific packages it is better to use the Miniconda distribution of python.
+
+*    Download the [tour notebooks](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/halkypi/lh/blob/gh-pages/assets/notebooks/notebooks.zip)
+*    Download Miniconda and Install [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
+*    Install Core Dependencies
+
+```
+conda install --file requirements.txt
+```
+*    If you have not done so already review [Data Science 101](/lh/intro/101/)
 
 ## IPython Magic Commands
 

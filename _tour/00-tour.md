@@ -1,6 +1,7 @@
 ---
 title: "Tour"
-permalink: /tour/
+permalink: /tour/tmp
+publish: false
 ---
 {% include base_path %}
 

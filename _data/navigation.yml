@@ -9,8 +9,8 @@ main:
   - title: "Tour"
     url: /tour/
 
-  - title: "Community"
-    url: /community/
+#  - title: "Community"
+#    url: /community/
 
 # intro
 intro:
@@ -32,12 +32,6 @@ about:
     children:
       - title: "About"
         url: /about/
-      - title: "History"
-        url: /about/history/
-  - title: "Technical"
-    children:
-      - title: "Standard"
-        url: /about/standard/
 
 # tour
 tour:
@@ -45,8 +39,6 @@ tour:
     children:
       - title: "Tour"
         url: /tour/
-      - title: "Setup"
-        url: /tour/setup/
       - title: "NumPy"
         url: /tour/numpy/
       - title: "SciPy"
@@ -65,8 +57,8 @@ tour:
         url: /tour/scikitlearn
 
 # community
-community:
-  - title: "Community/Consulting"
-    children:
-      - title: "Community/Consulting"
-        url: /community/
+#community:
+#  - title: "Community/Consulting"
+#    children:
+#      - title: "Community/Consulting"
+#        url: /community/

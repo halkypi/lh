@@ -7,11 +7,7 @@ modified: 2016-08-15T15:00:00-00:00
 
 {% include base_path %}
 
-OpenPGP is a non-proprietary protocol for encrypting email communication using public key cryptography.
-It is based on the original PGP (Pretty Good Privacy) software.
-The OpenPGP protocol defines standard formats for encrypted messages, signatures, and certificates for exchanging public keys.
+This is an introduction to data wrangling for legal hackers!  The material has been put together by lawyers for lawyers so we can learn to swim more efficiently in data.  The hope is this resource will grow as we build a community of makers that love the law, hacking and data wrangling. Learn more about hacker culture here: [Heros of the Computer Revolution](https://www.amazon.com/dp/B003PDMKIY/ref=cm_sw_r_tw_dp_U_x_p4wPCb9WVF2VX).
 
-Beginning in 1997, the OpenPGP Working Group was formed in the Internet Engineering Task Force (IETF) to define this standard that had formerly been a proprietary product since 1991.
-Over the past decade, PGP, and later OpenPGP, has become the standard for nearly all of the world's encrypted email.
-
-As an [IETF Proposed Standard RFC 4880](https://tools.ietf.org/html/rfc4880), OpenPGP can be implemented by any company without paying any licensing fees to anyone.
+![](https://images-na.ssl-images-amazon.com/images/I/51NILryveOL._SX322_BO1,204,203,200_.jpg)
+{: .fs-6 .fw-300 }

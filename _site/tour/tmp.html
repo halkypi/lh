@@ -19,7 +19,7 @@
 
 
 
-<title>History - NC Legal Hackers</title>
+<title>Tour - NC Legal Hackers</title>
 
 
 
@@ -29,15 +29,15 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="NC Legal Hackers">
-<meta property="og:title" content="History">
+<meta property="og:title" content="Tour">
 
 
-  <link rel="canonical" href="http://localhost:4000/lh/about/history/">
-  <meta property="og:url" content="http://localhost:4000/lh/about/history/">
+  <link rel="canonical" href="http://localhost:4000/lh/tour/tmp">
+  <meta property="og:url" content="http://localhost:4000/lh/tour/tmp">
 
 
 
-  <meta property="og:description" content="History of OpenPGP">
+  <meta property="og:description" content="">
 
 
 
@@ -160,7 +160,7 @@
     
       <li>
         
-          <span class="nav__sub-title">About</span>
+          <span class="nav__sub-title">Tour</span>
         
 
         
@@ -172,7 +172,71 @@
             
             
 
-            <li><a href="http://localhost:4000/lh/about/" class="">About</a></li>
+            <li><a href="http://localhost:4000/lh/tour/" class="">Tour</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/numpy/" class="">NumPy</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/scipy/" class="">SciPy</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/pandas/" class="">Pandas</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/matplotlib/" class="">Matplotlib</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/seaborn/" class="">Seaborn</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/gensim/" class="">Gensim</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/nltk/" class="">NLTK</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/scikitlearn" class="">SciKit Learn</a></li>
           
         </ul>
         
@@ -186,15 +250,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="History">
-    <meta itemprop="description" content="History of OpenPGP">
+    <meta itemprop="headline" content="Tour">
+    <meta itemprop="description" content="">
     
-    <meta itemprop="dateModified" content="August 15, 2016">
+    
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">History
+          <h1 class="page__title" itemprop="headline">Tour
 </h1>
           
         </header>
@@ -202,31 +266,39 @@
 
       <section class="page__content" itemprop="text">
         
-<p>OpenPGP is a non-proprietary protocol for encrypting email using public key cryptography.
-The OpenPGP protocol defines standard formats for encrypted messages, signatures, private keys, and certificates for exchanging public keys.</p>
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
 
-<p>It is based on the Pretty Good Privacy (PGP) freeware software as originally developed in 1991 by <a href="http://philzimmermann.com">Phil Zimmermann</a>.
-For that, he was the target of a three-year criminal investigation, because the US government held that US export restrictions for cryptographic software were violated when PGP spread all around the world following its publication as freeware.</p>
+  </nav>
+</aside>
 
-<p>Despite the lack of funding, the lack of any paid staff, the lack of a company to stand behind it, and despite government persecution, PGP became the most widely used email encryption software in the world. After the government dropped its case in early 1996, Zimmermann founded PGP Inc.
-That company and its intellectual property were acquired by Network Associates Inc (NAI) in December 1997.
-NAI continued to own and develop PGP products for commercial and freeware purposes.
-In 2002, NAI discontinued development and sales of PGP, and sold the rights to it to a new company, PGP Corporation.</p>
+<ul>
+  <li>Download the <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/halkypi/lh/blob/gh-pages/assets/notebooks/notebooks.zip">tour notebooks</a></li>
+</ul>
 
-<p>OpenPGP is the open standards version of NAI&#8217;s PGP encryption protocol.
-The OpenPGP Working Group is seeking the qualification of OpenPGP as an Internet Standard as defined by the IETF.
-Each distinct version of an Internet standards-related specification is published as part of the &#8220;Request for Comments&#8221; (RFC) document series.</p>
+<p>virtualenv is used to manage Python packages for different projects. Using virtualenv allows you to avoid installing Python packages globally which could break system tools or other projects. You can install virtualenv using pip.</p>
 
-<p>OpenPGP is on the Internet Standards Track and is under active development.
-Many e-mail clients provide OpenPGP-compliant email security as described in RFC 3156.
-The current specification is RFC 4880 (November 2007), the successor to RFC 2440. RFC 4880 specifies a suite of required algorithms consisting of ElGamal encryption, DSA, Triple DES and SHA-1.
-In addition to these algorithms, the standard recommends RSA as described in PKCS #1 v1.5 for encryption and signing, as well as AES-128, CAST-128 and IDEA.
-Beyond these, many other algorithms are supported.
-The standard was extended to support Camellia cipher by RFC 5581 in 2009, and encryption based on elliptic curve cryptography (ECDSA, ECDH) by RFC 6637 in 2012. Support of EdDSA will be added by draft-koch-eddsa-for-openpgp-00 proposed in 2014.</p>
+<p>make sure that pip is up-to-date by running:</p>
 
-<p>As far as we know, <a href="http://www.theverge.com/2014/12/28/7458159/encryption-standards-the-nsa-cant-crack-pgp-tor-otr-snowden">intelligence organizations aren&#8217;t able to break it</a>.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install --upgrade pip
 
-<p>Learn more about the technical specifications of OpenPGP on our <a href="/about/standard/">page about the standards</a>.</p>
+python3 -m pip install --user virtualenv
+python3 -m venv env
+source env/bin/activate
+</code></pre></div></div>
+<p>deactivate</p>
+
+<p>NumPy.ipynb
+SciPy.ipynb
+Pandas.ipynb
+Matplotlib.ipynb</p>
+
+<p>Gensim.ipynb
+Seaborn.ipynb
+NLTK.ipynb
+SciKit-Learn.ipynb</p>
+
 
         
       </section>
@@ -239,8 +311,6 @@ The standard was extended to support Camellia cipher by RFC 5581 in 2009, and en
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-08-15">August 15, 2016</time></p>
-        
       </footer>
 
       
@@ -250,11 +320,10 @@ The standard was extended to support Camellia cipher by RFC 5581 in 2009, and en
 
   <nav class="pagination">
     
-      <a href="http://localhost:4000/lh/about/" class="pagination--pager" title="About
-">Previous</a>
+      <a href="#" class="pagination--pager disabled">Previous</a>
     
     
-      <a href="http://localhost:4000/lh/about/standard/" class="pagination--pager" title="Standard
+      <a href="http://localhost:4000/lh/tour/" class="pagination--pager" title="Tour
 ">Next</a>
     
   </nav>
