@@ -23,7 +23,7 @@ feature_row:
     alt: "Data science 101 for lawyers"
     title: "Data science 101 for lawyers"
     excerpt: "'Text analytics... refers to the discovery of knowledge that can be found in text archives... [it] describes a set of linguistic, statistical and machine learning techniques that model and structure the information content of textual sources for business intelligence, exploratory data analysis, research or investigation.'  ([Hu and Liu, 2002, pp 387-8](https://www.researchgate.net/profile/Sanjay_Chakraborty/post/What_are_the_machine_learning_algorithms_used_in_biological_research/attachment/59d64f4879197b80779a8768/AS%3A497046570401792%401495516545497/download/588dfc2633c3cd86ab3faba2a44a8e4ceb63.pdf))."
-    url: "intro/101/"
+    url: "/intro/101/"
     btn_label: "Learn More"
 
   - image_path: wordcloud.jpg
