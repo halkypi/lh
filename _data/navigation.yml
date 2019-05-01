@@ -23,7 +23,7 @@ intro:
           - title: "Ipython Debugger"
             url: /intro/ipdb/
           - title: "Data Science 101"
-            url: intro/101/
+            url: /intro/101/
           - title: "Extra Credit"
             url: /intro/extra-credit/
 # about
