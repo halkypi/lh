@@ -4,8 +4,6 @@ permalink: /tour/gensim/
 ---
 {% include base_path %}
 
-{% include toc %}
-
 <h1>Automatic summarization using Gensim</h1>
 
 This module automatically summarizes the given text, by extracting one or more important sentences from the text. In a similar way, it can also extract keywords. This tutorial will teach you to use this summarization module via some examples. First, we will try a small example, then we will try two larger ones, and then we will review the performance of the summarizer in terms of speed.
