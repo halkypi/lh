@@ -32,6 +32,8 @@ about:
     children:
       - title: "About"
         url: /about/
+      - title: "Intro"
+        url: /intro/
 
 # tour
 tour:
