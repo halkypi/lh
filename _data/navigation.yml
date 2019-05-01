@@ -6,13 +6,13 @@ main:
   - title: "Intro"
     url: /intro/
 
-  - title: "Software"
-    url: /software/
+  - title: "Tour"
+    url: /tour/
 
   - title: "Community"
     url: /community/
 
-# getting started    
+# intro
 intro:
     - title: "Intro to Python"
       children:
@@ -22,9 +22,10 @@ intro:
             url: /intro/turtle/
           - title: "Ipython Debugger"
             url: /intro/ipdb/
+          - title: "Data Science 101"
+            url: intro/101/
           - title: "Extra Credit"
             url: /intro/extra-credit/
-
 # about
 about:
   - title: "About"
@@ -38,20 +39,30 @@ about:
       - title: "Standard"
         url: /about/standard/
 
-# software
-software:
-  - title: "Software"
+# tour
+tour:
+  - title: "Tour"
     children:
-      - title: "Email Encryption"
-        url: /software/
-      - title: "Data Science 101"
-        url: /101/
-      - title: "Server Software"
-        url: /software/server/
-      - title: "Developer Libraries/Tools"
-        url: /software/developer/
-      - title: "Misc Tools"
-        url: /software/misc/
+      - title: "Tour"
+        url: /tour/
+      - title: "Setup"
+        url: /tour/setup/
+      - title: "NumPy"
+        url: /tour/numpy/
+      - title: "SciPy"
+        url: /tour/scipy/
+      - title: "Pandas"
+        url: /tour/pandas/
+      - title: "Matplotlib"
+        url: /tour/matplotlib/
+      - title: "Seaborn"
+        url: /tour/seaborn/
+      - title: "Gensim"
+        url: /tour/gensim/
+      - title: "NLTK"
+        url: /tour/nltk/
+      - title: "SciKit Learn"
+        url: /tour/scikitlearn
 
 # community
 community:

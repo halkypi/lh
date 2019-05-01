@@ -1,0 +1,624 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Scikit-learn - NC Legal Hackers</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="NC Legal Hackers">
+<meta property="og:title" content="Scikit-learn">
+
+
+  <link rel="canonical" href="http://localhost:4000/lh/tour/scikitlearn/">
+  <meta property="og:url" content="http://localhost:4000/lh/tour/scikitlearn/">
+
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2019-04-30T16:42:21+00:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "NC Legal Hackers",
+      "url" : "http://localhost:4000/lh",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/lh/feed.xml" type="application/atom+xml" rel="alternate" title="NC Legal Hackers Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/lh/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/lh/">NC Legal Hackers</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/lh/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/lh/intro/">Intro</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/lh/tour/">Tour</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/lh/community/">Community</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+
+<nav class="nav__list">
+  
+  <ul>
+    
+      <li>
+        
+          <span class="nav__sub-title">Tour</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/" class="">Tour</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/setup/" class="">Setup</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/numpy/" class="">NumPy</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/scipy/" class="">SciPy</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/pandas/" class="">Pandas</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/matplotlib/" class="">Matplotlib</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/seaborn/" class="">Seaborn</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/gensim/" class="">Gensim</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/nltk/" class="">NLTK</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/scikitlearn" class="">SciKit Learn</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Scikit-learn">
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Scikit-learn
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#classification-with-a-naive-bayes" id="markdown-toc-classification-with-a-naive-bayes">Classification with a Naive Bayes</a></li>
+  <li><a href="#lets-start-with-a-helper-function-for-loading-the-raw-data" id="markdown-toc-lets-start-with-a-helper-function-for-loading-the-raw-data">Let’s start with a helper function for loading the raw data</a></li>
+  <li><a href="#what-we-want-the-data-to-look-like-next" id="markdown-toc-what-we-want-the-data-to-look-like-next">What we want the data to look like next</a></li>
+  <li><a href="#what-the-machine-wants-the-data-to-look-like-next" id="markdown-toc-what-the-machine-wants-the-data-to-look-like-next">What the machine wants the data to look like next</a></li>
+  <li><a href="#fit-a-multinomial-naive-bayes-classifier" id="markdown-toc-fit-a-multinomial-naive-bayes-classifier">Fit a Multinomial Naive Bayes Classifier</a></li>
+  <li><a href="#what--were-correctly-predicted" id="markdown-toc-what--were-correctly-predicted">What % were correctly predicted?</a></li>
+  <li><a href="#use-better-fit-statistics-a-confusion-matrix" id="markdown-toc-use-better-fit-statistics-a-confusion-matrix">Use better fit statistics (a confusion matrix)</a></li>
+  <li><a href="#data-scientists-care-about-over-fittingso-should-we" id="markdown-toc-data-scientists-care-about-over-fittingso-should-we">Data scientists care about over fitting…so should we</a></li>
+  <li><a href="#what-about-for-predicting-new-headlines" id="markdown-toc-what-about-for-predicting-new-headlines">What about for predicting new headlines?</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<p>Scikit-learn contains simple and efficient tools for data mining and data analysis.  It implements a wide variety of machine learning algorithms and processes to conduct advanced analytics.</p>
+
+<p>Library documentation: <a>http://scikit-learn.org/stable/</a></p>
+
+<h4 id="classification-with-a-naive-bayes">Classification with a Naive Bayes</h4>
+
+<ul>
+  <li>2 classes of headlines “upworthy” (1) and “not upworthy” (0)</li>
+  <li>Load the data</li>
+  <li>Featurize the data</li>
+  <li>Train and Test the classifier the <em>right</em> way</li>
+  <li>Use the model to predict new headlines</li>
+</ul>
+
+<h4 id="lets-start-with-a-helper-function-for-loading-the-raw-data">Let’s start with a helper function for loading the raw data</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">import_titles</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+    <span class="c">#Imports text file</span>
+    <span class="n">titles</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="c"># Handles unicode encode/decode</span>
+    <span class="n">titles</span> <span class="o">=</span> <span class="n">titles</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">'utf-8'</span><span class="p">)</span>
+    <span class="n">titles</span> <span class="o">=</span> <span class="n">titles</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'ascii'</span><span class="p">,</span> <span class="s">'ignore'</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">titles</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">upworthy_titles</span> <span class="o">=</span> <span class="n">import_titles</span><span class="p">(</span><span class="s">'./data/upworthy_titles.txt'</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">upworthy_titles</span><span class="p">))</span>
+<span class="n">upworthy_titles</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span> <span class="c"># first five</span>
+
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">times_titles</span> <span class="o">=</span> <span class="n">import_titles</span><span class="p">(</span><span class="s">'./data/not_upworthy_titles.txt'</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">times_titles</span><span class="p">))</span>
+<span class="n">times_titles</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span> <span class="c"># first five</span>
+</code></pre></div></div>
+
+<h3 id="what-we-want-the-data-to-look-like-next">What we want the data to look like next</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">upworthy</th>
+      <th style="text-align: left">titles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">He Was About To Take His Own Life — Until A Man Stopped Him. Here He Meets Him Face To Face Again</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">CVS Pharmacy to Stop Selling Tobacco Goods by October</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">Twitter’s Share Price Falls After It Reports a Loss</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">A 16-Year-Old Explains Why Everything You Thought You Knew About Beauty May Be Wrong. With Math.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#Set up placehold lists</span>
+<span class="n">upworthy</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">titles</span>   <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c">#Go through all the upworthy articles</span>
+<span class="k">for</span> <span class="n">title</span> <span class="ow">in</span> <span class="n">upworthy_titles</span><span class="p">:</span>
+    <span class="c">#add title to title list</span>
+    <span class="n">titles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+    <span class="c">#add 1 to Y list</span>
+    <span class="n">upworthy</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c"># Upworthy = 1</span>
+
+<span class="k">for</span> <span class="n">title</span> <span class="ow">in</span> <span class="n">times_titles</span><span class="p">:</span>
+    <span class="n">titles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+    <span class="n">upworthy</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c"># Upworthy = 0  </span>
+</code></pre></div></div>
+
+<h3 id="what-the-machine-wants-the-data-to-look-like-next">What the machine wants the data to look like next</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">upworthy</th>
+      <th style="text-align: center">stop</th>
+      <th style="text-align: center">man</th>
+      <th style="text-align: center">obama</th>
+      <th style="text-align: center">explain</th>
+      <th style="text-align: center">everything</th>
+      <th style="text-align: center">you</th>
+      <th style="text-align: center">nato</th>
+      <th style="text-align: center">debate</th>
+      <th style="text-align: center">industry</th>
+      <th style="text-align: center">believe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">CountVectorizer</span>
+
+<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">lowercase</span>     <span class="o">=</span> <span class="bp">True</span> <span class="p">,</span>
+                             <span class="n">min_df</span>        <span class="o">=</span> <span class="mi">2</span> <span class="p">,</span>
+                             <span class="n">max_df</span>        <span class="o">=</span> <span class="o">.</span><span class="mi">5</span> <span class="p">,</span>
+                             <span class="n">ngram_range</span>   <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+                             <span class="n">stop_words</span>    <span class="o">=</span> <span class="s">'english'</span><span class="p">,</span> 
+                             <span class="n">strip_accents</span> <span class="o">=</span> <span class="s">'unicode'</span><span class="p">)</span>
+<span class="n">vectorizer</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">titles</span><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">titles</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="fit-a-multinomial-naive-bayes-classifier">Fit a Multinomial Naive Bayes Classifier</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">MultinomialNB</span>
+
+<span class="n">clf</span> <span class="o">=</span> <span class="n">MultinomialNB</span><span class="p">()</span>
+<span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">upworthy</span><span class="p">)</span>
+
+<span class="c"># Predict on the same data used for training (don't do this at home)</span>
+<span class="n">y_hat</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> 
+
+<span class="c"># Print out some predictions</span>
+<span class="n">y_hat</span><span class="p">[:</span><span class="mi">20</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h3 id="what--were-correctly-predicted">What % were correctly predicted?</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">clf</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">upworthy</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="use-better-fit-statistics-a-confusion-matrix">Use better fit statistics (a confusion matrix)</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># A helper function to plot the matrix</span>
+<span class="kn">import</span> <span class="nn">itertools</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="k">def</span> <span class="nf">plot_confusion_matrix</span><span class="p">(</span><span class="n">cm</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">matshow</span><span class="p">(</span><span class="n">cm</span><span class="p">,</span><span class="n">cmap</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">Blues</span><span class="p">)</span>
+    <span class="n">classes</span> <span class="o">=</span> <span class="p">[</span><span class="s">'not upworthy'</span><span class="p">,</span><span class="s">'upworthy'</span><span class="p">]</span>
+    <span class="n">tick_marks</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">classes</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">tick_marks</span><span class="p">,</span> <span class="n">classes</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">tick_marks</span><span class="p">,</span> <span class="n">classes</span><span class="p">)</span>
+    <span class="c"># Plot Values</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">itertools</span><span class="o">.</span><span class="n">product</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">cm</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">range</span><span class="p">(</span><span class="n">cm</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])):</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">cm</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">],</span>
+                 <span class="n">horizontalalignment</span><span class="o">=</span><span class="s">"center"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">"black"</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'Actual'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'Predicted'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c"># Create and plot confusion matrix</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
+<span class="n">cm</span> <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">confusion_matrix</span><span class="p">(</span><span class="n">upworthy</span><span class="p">,</span> <span class="n">y_hat</span><span class="p">)</span>
+
+<span class="n">plot_confusion_matrix</span><span class="p">(</span><span class="n">cm</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="data-scientists-care-about-over-fittingso-should-we">Data scientists care about over fitting…so should we</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+
+<span class="c"># Split Test / Train</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">upworthy</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_test_pred</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">"classification accuracy:"</span><span class="p">,</span> <span class="n">metrics</span><span class="o">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_test_pred</span><span class="p">))</span>
+<span class="n">cm</span> <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_test_pred</span><span class="p">)</span>
+<span class="n">plot_confusion_matrix</span><span class="p">(</span><span class="n">cm</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>This is unstable for some reason (skip for now):</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from sklearn import cross_validation
+
+cross_validation.cross_val_score(clf, X, np.array(upworthy),  cv=10)
+
+np.mean(cross_validation.cross_val_score(clf, X, np.array(upworthy),  cv=10))
+</code></pre></div></div>
+
+<h3 id="what-about-for-predicting-new-headlines">What about for predicting new headlines?</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">soc_title</span> <span class="o">=</span> <span class="s">'Educational Assortative Mating and Earnings Inequality in the United States'</span>
+<span class="n">soc_title_vector</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">([</span><span class="n">soc_title</span><span class="p">])</span>
+<span class="n">clf</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">soc_title_vector</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gawker_title</span> <span class="o">=</span> <span class="s">'Shocking Footage Aired of Police Shooting Face-Eating Nude Man'</span>
+<span class="n">gawker_title_vector</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">([</span><span class="n">gawker_title</span><span class="p">])</span>
+<span class="n">clf</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">gawker_title_vector</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+        
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/lh/tour/nltk/" class="pagination--pager" title="NLTK
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+    
+      <li><i class="fa fa-fw fa-github" aria-hidden="true"></i> This site is organized in the open on GitHub. <a href="https://github.com/halkypi/lh">Suggest changes.</a></li>
+    
+    
+    <li><a href="http://localhost:4000/lh/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/lh/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>
+

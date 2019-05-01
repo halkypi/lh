@@ -163,13 +163,13 @@ kramdown:
 
 # Collections
 collections:
-  intro:
-    output: true
-    permalink: /:collection:/:path/
   about:
     output: true
     permalink: /:collection/:path/
-  software:
+  intro:
+    output: true
+    permalink: /:collection:/:path/
+  tour:
     output: true
     permalink: /:collection/:path/
   community:
@@ -196,18 +196,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _intro
-  - scope:
-      path: ""
-      type: intro
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "intro"
 # _about
   - scope:
       path: ""
@@ -219,11 +207,11 @@ defaults:
       share: false
       comments: false
       sidebar:
-        nav: "about"
-  # _software
+        nav: "about"         
+ # _intro
   - scope:
       path: ""
-      type: software
+      type: intro
     values:
       layout: single
       read_time: false
@@ -231,7 +219,20 @@ defaults:
       share: false
       comments: false
       sidebar:
-        nav: "software"
+        nav: "intro"
+
+  # _tour
+  - scope:
+      path: ""
+      type: tour
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "tour"
   # _community
   - scope:
       path: ""

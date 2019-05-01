@@ -1,0 +1,480 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Data science 101 for lawyers - NC Legal Hackers</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="NC Legal Hackers">
+<meta property="og:title" content="Data science 101 for lawyers">
+
+
+  <link rel="canonical" href="http://localhost:4000/lh/intro/101/">
+  <meta property="og:url" content="http://localhost:4000/lh/intro/101/">
+
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2019-04-30T16:42:21+00:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "NC Legal Hackers",
+      "url" : "http://localhost:4000/lh",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/lh/feed.xml" type="application/atom+xml" rel="alternate" title="NC Legal Hackers Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/lh/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/lh/">NC Legal Hackers</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/lh/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/lh/intro/">Intro</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/lh/tour/">Tour</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/lh/community/">Community</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+
+<nav class="nav__list">
+  
+  <ul>
+    
+      <li>
+        
+          <span class="nav__sub-title">Intro to Python</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/intro/" class="">Intro to Python</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/intro/turtle/" class="">Turtle Objects</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/intro/ipdb/" class="">Ipython Debugger</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lhintro/101/" class="">Data Science 101</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/intro/extra-credit/" class="">Extra Credit</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Data science 101 for lawyers">
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Data science 101 for lawyers
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#what-is-data-science" id="markdown-toc-what-is-data-science">What is data science?</a></li>
+  <li><a href="#what-is-a-data-scientist" id="markdown-toc-what-is-a-data-scientist">What is a data scientist?</a></li>
+  <li><a href="#what-data-scientists-spend-time-doing" id="markdown-toc-what-data-scientists-spend-time-doing">What data scientists spend time doing</a></li>
+  <li><a href="#data-scientists-are-obsessed-with-data" id="markdown-toc-data-scientists-are-obsessed-with-data">Data scientists are obsessed with data</a></li>
+  <li><a href="#data-scientists-think-analytically" id="markdown-toc-data-scientists-think-analytically">Data scientists think analytically</a></li>
+  <li><a href="#legal-text-analytics" id="markdown-toc-legal-text-analytics">Legal text analytics</a></li>
+  <li><a href="#pioneers-before-the-internet" id="markdown-toc-pioneers-before-the-internet">Pioneers… before the internet</a></li>
+  <li><a href="#where-to-start" id="markdown-toc-where-to-start">Where to start?</a></li>
+  <li><a href="#to-become-data-artisans-we-need-tools" id="markdown-toc-to-become-data-artisans-we-need-tools">To become data artisans we need tools!</a></li>
+  <li><a href="#what-about-r-apache-spark-others" id="markdown-toc-what-about-r-apache-spark-others">What about R? Apache Spark? Others?</a></li>
+  <li><a href="#lets-build-and-explore-our-toolkit" id="markdown-toc-lets-build-and-explore-our-toolkit">Let’s build and explore our toolkit!</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<h2 id="what-is-data-science">What is data science?</h2>
+
+<p>Data science has been <a href="https://www.edx.org/course/data-science-essentials">defined</a> as:</p>
+
+<blockquote>
+  <p>The exploration and quantitative analysis of all available structured and unstructured data to develop understanding, extract knowledge, and formulate actionable results.</p>
+</blockquote>
+
+<p><a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram">Drew Conway’s ven diagram</a> has become quite famous, although as <a href="https://jakevdp.github.io/PythonDataScienceHandbook/00.00-preface.html">Jake VanderPlas says</a>:</p>
+
+<blockquote>
+  <p>While some of the intersection labels are a bit tongue-in-cheek, this diagram captures the essence of what I think people mean when they say “data science”: it is fundamentally an interdisciplinary subject. Data science comprises three distinct and overlapping areas: the skills of a statistician who knows how to model and summarize datasets (which are growing ever larger); the skills of a computer scientist who can design and use algorithms to efficiently store, process, and visualize this data; and the domain expertise—what we might think of as “classical” training in a subject—necessary both to formulate the right questions and to put their answers in context.</p>
+</blockquote>
+
+<p><img src="/lh/assets/images/Data_Science_VD.png?raw=true" alt="venn" /></p>
+
+<h2 id="what-is-a-data-scientist">What is a data scientist?</h2>
+
+<p>There are different kinds of data scientists.  This course has been described as an intro to data wrangling because data science is a profession in itself and clearly out of scope.  This is meant to be an introduction for people interested in learning to swim in data and collaborate with others people in that field.  In terms of the law, we can think of data as evidence over opinion, the facts.  Lawyers have been defining and refining the laws of evidence for centuries so in that sense, they are uniquely qualified.</p>
+
+<blockquote>
+  <p>think of data science not as a new domain of knowledge to learn, but a new set of skills that you can apply within your current area of expertise.</p>
+</blockquote>
+
+<p>~ Jake VanderPlas</p>
+
+<p>The discipline of data science is better defined by looking at what they do.</p>
+
+<h2 id="what-data-scientists-spend-time-doing">What data scientists spend time doing</h2>
+
+<p><img src="https://www.raconteur.net//wp-content/uploads/2016/10/What-data-scientists-spend-the-most-time-doing.jpg" alt="img" /></p>
+
+<p>This looks very much like discovery in a large trial or investigation.  Trawling through mounds of evidence or unused material is a common legal experience.  However, the art of data wrangling has been taken to a whole new level in the age of big data and mass paralell processing.  There is much to learn and anyone that thinks they have a handle on current techonology are probably doing it wrong.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/2400/1*2Wym4LA075l3VpPi9XIxRQ.png" alt="" /></p>
+
+<h2 id="data-scientists-are-obsessed-with-data">Data scientists are obsessed with data</h2>
+
+<ul>
+  <li>Finding data sources</li>
+  <li>Acquiring data</li>
+  <li>Cleaning and transforming data</li>
+  <li>Understanding relationships in data</li>
+  <li>Delivering value from data</li>
+  <li>Visualizing data and results</li>
+  <li>Building data products</li>
+</ul>
+
+<h2 id="data-scientists-think-analytically">Data scientists think analytically</h2>
+
+<p>Make decisions based on analysis of data:</p>
+
+<ul>
+  <li>Replace intuition with data driven analytical decisions</li>
+  <li>Formulate and test hypothesizes based on their analysis</li>
+  <li>Transform raw data into valuable assets</li>
+  <li>Extract value from data assets</li>
+  <li>Increase the pace of decisions, actions and knowledge acquisition</li>
+</ul>
+
+<h2 id="legal-text-analytics">Legal text analytics</h2>
+
+<ul>
+  <li>Over 80% the world’s data is unstructured text</li>
+  <li>NLP, Information extraction &amp; retrieval (IR), library science data science is the most challenging area of data science (believe it…far more challenging than vision, genomics and others specialties)</li>
+  <li>Human knowledge is at the center of everything</li>
+  <li>Text Mining is the reason Google, Microsoft, Facebook, Twitter, LinkedIn, Amazon and others dominate in every area of analytics</li>
+</ul>
+
+<blockquote>
+  <p>Text analytics… refers to the discovery of knowledge that can be found in text archives… [it] describes a set of linguistic, statistical and machine learning techniques that model and structure the information content of textual sources for business intelligence, exploratory data analysis, research or investigation.  (<a href="https://www.researchgate.net/profile/Sanjay_Chakraborty/post/What_are_the_machine_learning_algorithms_used_in_biological_research/attachment/59d64f4879197b80779a8768/AS%3A497046570401792%401495516545497/download/588dfc2633c3cd86ab3faba2a44a8e4ceb63.pdf">Hu and Liu, 2002, pp 387-8</a>).  When the texts to be analyzed are legal, we may refer to “legal text analytics” or more simply “legal analytics”.</p>
+</blockquote>
+
+<p>~ <a href="https://www.cambridge.org/core/books/artificial-intelligence-and-legal-analytics/E7D705EEF392501A1DB180645917E7E0">Kevin Ashley, AI and legal analytics</a></p>
+
+<p><img src="https://i.pinimg.com/originals/73/b6/dc/73b6dc222c079fdbb98cc4c9c743ddae.jpg" alt="" /></p>
+
+<h2 id="pioneers-before-the-internet">Pioneers… before the internet</h2>
+
+<ul>
+  <li>1964 – 1967 Ohio Bar Automated Research (OBAR) writes the specification for an online, interactive, computer-assisted research service</li>
+  <li>1964 Data Corporation in Dayton contracted to implement what would become the LEXIS service</li>
+  <li>1973 LEXIS is unveiled and goes on to take 75 percent of the computerized legal research market by the late 1980s</li>
+  <li>3 petabytes of data which doubles every three years (150 times size of wikipedia)</li>
+</ul>
+
+<p><a href="http://www.lexisnexis.com/anniversary/30th_timeline_fulltxt.pdf">timeline</a></p>
+
+<h2 id="where-to-start">Where to start?</h2>
+
+<p><a href="http://nirvacana.com/thoughts/2013/07/08/becoming-a-data-scientist/">Swami Chandrasekaran</a> posted this excellent map in his article on becoming a data scientist:</p>
+
+<p><img src="http://nirvacana.com/thoughts/wp-content/uploads/2018/01/RoadToDataScientist1.png" alt="map" /></p>
+
+<p><a href="https://scikit-learn.org/stable/tutorial/machine_learning_map/">Scikit-learn</a> also have this great map with links out to descriptions of each estimator.</p>
+
+<p><img src="https://scikit-learn.org/stable/_static/ml_map.png" alt="scikit" /></p>
+
+<h2 id="to-become-data-artisans-we-need-tools">To become <a href="https://en.wikipedia.org/wiki/Artisan">data artisans</a> we need tools!</h2>
+
+<ul>
+  <li>Flexible and composable, many good libraries and interoperability with a large ecosystem of frameworks</li>
+  <li>Rapid and iterative prototype, develop and productionize</li>
+  <li>Tools that span the entire Knowledge Discovery lifecycle</li>
+  <li>Great documentation, reference material and examples</li>
+  <li>Large community of practitioners</li>
+  <li>Easy to learn</li>
+</ul>
+
+<p><img src="/lh/assets/images/tool-box.png?raw=true" alt="tools" /></p>
+
+<h2 id="what-about-r-apache-spark-others">What about R? Apache Spark? Others?</h2>
+
+<p>Some argue:</p>
+
+<blockquote>
+  <p>Python is the last language you’ll have to learn</p>
+</blockquote>
+
+<p>~ <a href="https://jakevdp.github.io/blog/2012/09/20/why-python-is-the-last/">Jake VandePlas</a></p>
+
+<ul>
+  <li>Python vs. R can get “religious” but here are a few reasons to stick with Python (for now):</li>
+  <li>Any R Library from Python with RPy2: https://rpy2.readthedocs.io</li>
+  <li>Python is a 1st class language in Apache Spark and libraries like SciKit-Learn and TensorFlow are already ported to Spark</li>
+  <li>Every major Deep Learning framework released in the last 2 years is based on or has 1st class support for Python (Theano, Caffe, Torch, TensorFlow and many others)</li>
+  <li>The same is not true for R</li>
+  <li>More importantly, Python’s language and ecosystem give you many powerful tools in a lightweight, extensible and portable toolkit</li>
+</ul>
+
+<h2 id="lets-build-and-explore-our-toolkit">Let’s build and explore our toolkit!</h2>
+
+<p>When we ran <code class="highlighter-rouge">pip install ipdb</code> it also installed some other useful things like <a href="https://jupyter.org/index.html">jupyter notebooks</a></p>
+<ul>
+  <li>Go to the terminal and run <code class="highlighter-rouge">jupyter notebook</code></li>
+</ul>
+
+<p>If this does not work run <code class="highlighter-rouge">pip install jupyter notebook</code> and try again.  It should start running on your local browser at: <code class="highlighter-rouge">http://localhost:8888/tree</code>.</p>
+
+<ul>
+  <li>Navigate to the <a href="http://localhost:8888/tree/Downloads">http://localhost:8888/tree/Downloads</a> directory</li>
+  <li>Download and run <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/halkypi/lh/blob/gh-pages/docs/notebooks/01-setup.ipynb">01-setup.ipynb</a></li>
+</ul>
+
+<p><img src="/lh/assets/images/jupyter1.png?raw=true" alt="jupyter1" /></p>
+<ul>
+  <li>Check out this ever-growing <a href="https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks">gallery of interesting Jupyter Notebooks</a></li>
+</ul>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+        
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/lh/intro/ipdb/" class="pagination--pager" title="Ipython Debugger
+">Previous</a>
+    
+    
+      <a href="http://localhost:4000/lh/intro/extra-credit/" class="pagination--pager" title="Extra Credit
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+    
+      <li><i class="fa fa-fw fa-github" aria-hidden="true"></i> This site is organized in the open on GitHub. <a href="https://github.com/halkypi/lh">Suggest changes.</a></li>
+    
+    
+    <li><a href="http://localhost:4000/lh/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/lh/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>
+

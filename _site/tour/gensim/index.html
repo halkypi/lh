@@ -1,0 +1,469 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Gensim - NC Legal Hackers</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="NC Legal Hackers">
+<meta property="og:title" content="Gensim">
+
+
+  <link rel="canonical" href="http://localhost:4000/lh/tour/gensim/">
+  <meta property="og:url" content="http://localhost:4000/lh/tour/gensim/">
+
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2019-04-30T16:42:21+00:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "NC Legal Hackers",
+      "url" : "http://localhost:4000/lh",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/lh/feed.xml" type="application/atom+xml" rel="alternate" title="NC Legal Hackers Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/lh/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/lh/">NC Legal Hackers</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/lh/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/lh/intro/">Intro</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/lh/tour/">Tour</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/lh/community/">Community</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+
+<nav class="nav__list">
+  
+  <ul>
+    
+      <li>
+        
+          <span class="nav__sub-title">Tour</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/" class="">Tour</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/setup/" class="">Setup</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/numpy/" class="">NumPy</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/scipy/" class="">SciPy</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/pandas/" class="">Pandas</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/matplotlib/" class="">Matplotlib</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/seaborn/" class="">Seaborn</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/gensim/" class="active">Gensim</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/nltk/" class="">NLTK</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/lh/tour/scikitlearn" class="">SciKit Learn</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Gensim">
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Gensim
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
+
+  </nav>
+</aside>
+
+<h1>Automatic summarization using Gensim</h1>
+
+<p>This module automatically summarizes the given text, by extracting one or more important sentences from the text. In a similar way, it can also extract keywords. This tutorial will teach you to use this summarization module via some examples. First, we will try a small example, then we will try two larger ones, and then we will review the performance of the summarizer in terms of speed.</p>
+
+<p>This summarizer is based on the &#8220;TextRank&#8221; algorithm, from an <a href="http://web.eecs.umich.edu/%7Emihalcea/papers/mihalcea.emnlp04.pdf">article</a> by Mihalcea et al. This algorithm was later improved upon by Barrios et al. in another <a href="https://raw.githubusercontent.com/summanlp/docs/master/articulo/articulo-en.pdf">article</a>, by introducing something called a &#8220;BM25 ranking function&#8221;.</p>
+
+<p>This tutorial assumes that you are familiar with Python and have <a href="http://radimrehurek.com/gensim/install.html">installed Gensim</a>.</p>
+
+<p><b>Note</b>: Gensim&#8217;s summarization only works for English for now, because the text is pre-processed so that stopwords are removed and the words are stemmed, and these processes are language-dependent.</p>
+
+<h2>Small example</h2>
+
+<p>First of all, we import the function &#8220;summarize&#8221;.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># import logging</span>
+<span class="c"># logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)</span>
+
+<span class="kn">from</span> <span class="nn">gensim.summarization</span> <span class="kn">import</span> <span class="n">summarize</span>
+</code></pre></div></div>
+
+<p>We will try summarizing a small toy example; later we will use a larger piece of text. In reality, the text is too small, but it suffices as an illustrative example.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">text</span> <span class="o">=</span> <span class="s">"Thomas A. Anderson is a man living two lives. By day he is an "</span> <span class="o">+</span> \
+    <span class="s">"average computer programmer and by night a hacker known as "</span> <span class="o">+</span> \
+    <span class="s">"Neo. Neo has always questioned his reality, but the truth is "</span> <span class="o">+</span> \
+    <span class="s">"far beyond his imagination. Neo finds himself targeted by the "</span> <span class="o">+</span> \
+    <span class="s">"police when he is contacted by Morpheus, a legendary computer "</span> <span class="o">+</span> \
+    <span class="s">"hacker branded a terrorist by the government. Morpheus awakens "</span> <span class="o">+</span> \
+    <span class="s">"Neo to the real world, a ravaged wasteland where most of "</span> <span class="o">+</span> \
+    <span class="s">"humanity have been captured by a race of machines that live "</span> <span class="o">+</span> \
+    <span class="s">"off of the humans' body heat and electrochemical energy and "</span> <span class="o">+</span> \
+    <span class="s">"who imprison their minds within an artificial reality known as "</span> <span class="o">+</span> \
+    <span class="s">"the Matrix. As a rebel against the machines, Neo must return to "</span> <span class="o">+</span> \
+    <span class="s">"the Matrix and confront the agents: super-powerful computer "</span> <span class="o">+</span> \
+    <span class="s">"programs devoted to snuffing out Neo and the entire human "</span> <span class="o">+</span> \
+    <span class="s">"rebellion. "</span>
+
+<span class="k">print</span> <span class="p">(</span><span class="s">'Input text:'</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>To summarize this text, we pass the <b>raw string data</b> as input to the function &#8220;summarize&#8221;, and it will return a summary.</p>
+
+<p>Note: make sure that the string does not contain any newlines where the line breaks in a sentence. A sentence with a newline in it (i.e. a carriage return, &#8220;\n&#8221;) will be treated as two sentences.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span> <span class="p">(</span><span class="s">'Summary:'</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">summarize</span><span class="p">(</span><span class="n">text</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>Use the &#8220;split&#8221; option if you want a list of strings instead of a single string.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">summarize</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">split</span><span class="o">=</span><span class="bp">True</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>You can adjust how much text the summarizer outputs via the &#8220;ratio&#8221; parameter or the &#8220;word_count&#8221; parameter. Using the &#8220;ratio&#8221; parameter, you specify what fraction of sentences in the original text should be returned as output. Below we specify that we want 50% of the original text (the default is 20%).</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span> <span class="p">(</span><span class="s">'Summary:'</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">summarize</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">ratio</span><span class="o">=</span><span class="mf">0.5</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>Using the &#8220;word_count&#8221; parameter, we specify the maximum amount of words we want in the summary. Below we have specified that we want no more than 50 words.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span> <span class="p">(</span><span class="s">'Summary:'</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">summarize</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">word_count</span><span class="o">=</span><span class="mi">50</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>As mentioned earlier, this module also supports <b>keyword</b> extraction. Keyword extraction works in the same way as summary generation (i.e. sentence extraction), in that the algorithm tries to find words that are important or seem representative of the entire text. They keywords are not always single words; in the case of multi-word keywords, they are typically all nouns.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">gensim.summarization</span> <span class="kn">import</span> <span class="n">keywords</span>
+
+<span class="k">print</span> <span class="p">(</span><span class="s">'Keywords:'</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">keywords</span><span class="p">(</span><span class="n">text</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h2>Larger example</h2>
+
+<p>Let us try an example with a larger piece of text. We will be using a synopsis of the movie &#8220;The Matrix&#8221;, which we have taken from <a href="http://www.imdb.com/title/tt0133093/synopsis?ref_=ttpl_pl_syn">this</a> IMDb page.</p>
+
+<p>In the code below, we read the text file directly from a web-page using &#8220;requests&#8221;. Then we produce a summary and some keywords.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'./data/the_matrix_synopsis.txt'</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
+    <span class="n">text</span><span class="o">=</span><span class="nb">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+<span class="k">print</span> <span class="p">(</span><span class="s">'Summary:'</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">summarize</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">ratio</span><span class="o">=</span><span class="mf">0.01</span><span class="p">))</span>
+
+<span class="k">print</span> <span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">Keywords:'</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">keywords</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">ratio</span><span class="o">=</span><span class="mf">0.01</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>If you know this movie, you see that this summary is actually quite good. We also see that some of the most important characters (Neo, Morpheus, Trinity) were extracted as keywords.</p>
+
+<h2>Another example</h2>
+
+<p>Let&#8217;s try an example similar to the one above. This time, we will use the <a href="http://www.imdb.com/title/tt0118715/synopsis?ref_=tt_stry_pl">IMDb synopsis</a> of &#8220;The Big Lebowski&#8221;.</p>
+
+<p>Again, we download the text and produce a summary and some keywords.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'./data/the_big_lebowski_synopsis.txt'</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
+    <span class="n">text</span><span class="o">=</span><span class="nb">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+<span class="k">print</span> <span class="p">(</span><span class="s">'Summary:'</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">summarize</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">ratio</span><span class="o">=</span><span class="mf">0.01</span><span class="p">))</span>
+
+<span class="k">print</span> <span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">Keywords:'</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">keywords</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">ratio</span><span class="o">=</span><span class="mf">0.01</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>This time around, the summary is not of high quality, as it does not tell us much about the movie. In a way, this might not be the algorithms fault, rather this text simply doesn&#8217;t contain one or two sentences that capture the essence of the text as in &#8220;The Matrix&#8221; synopsis.</p>
+
+<p>The keywords, however, managed to find some of the main characters.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+        
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/lh/tour/seaborn/" class="pagination--pager" title="Seaborn
+">Previous</a>
+    
+    
+      <a href="http://localhost:4000/lh/tour/nltk/" class="pagination--pager" title="NLTK
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+    
+      <li><i class="fa fa-fw fa-github" aria-hidden="true"></i> This site is organized in the open on GitHub. <a href="https://github.com/halkypi/lh">Suggest changes.</a></li>
+    
+    
+    <li><a href="http://localhost:4000/lh/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/lh/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>
+
