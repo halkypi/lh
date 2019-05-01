@@ -9,8 +9,8 @@ main:
   - title: "Tour"
     url: /tour/
 
-#  - title: "Community"
-#    url: /community/
+  - title: "Community"
+    url: /community/
 
 # intro
 intro:
@@ -58,9 +58,9 @@ tour:
       - title: "SciKit Learn"
         url: /tour/scikitlearn
 
-# community
-#community:
-#  - title: "Community/Consulting"
-#    children:
-#      - title: "Community/Consulting"
-#        url: /community/
+#community
+community:
+  - title: "Community"
+    children:
+      - title: "Community"
+        url: /community/
