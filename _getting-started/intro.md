@@ -17,7 +17,7 @@ We'll be using Python 3 because it's free, powerful, full stack ([Python is the 
 
 There are different installations out there, Anaconda is awesome but a bit bloated for what we need to get started.  So let's install standard Python 3 (Python 2 is being deprecated in 2020) and then use python to install the packages we need as we go (some miniconda stuff).  Navigate to [https://www.python.org/downloads/](https://www.python.org/downloads/) and download the latest version for your operating system.  Launch the executable, check the `Add Python to Path` box and accept the default settings.
 
-![](https://github.com/halkypi/lh/blob/gh-pages/assets/images/install.gif?raw=true)
+![](/lh/images/install.gif?raw=true)
 
 ### Test installation
 Open a terminal, type in `python` and press enter.  You  should see three chevrons `>>>`, see below.  If this doesn't work you probably missed the `Add Python to Path` box, just reinstall. 
@@ -70,8 +70,8 @@ print("Hello", name)
 
 Click `File > New File`.  You should now have the interpreter (or shell) next to an untitled text file.  Put them side by side and rename the `File > Save As` `hello` in a new directory named `code` in your home directory.  You'll notice [IDLE](https://docs.python.org/3/library/idle.html) automatically adds the .py extension.  Save the file and `Run > Run Module` or `F5` to execute.  You should see:
 
-![img0](/lh/assets/images/img0.png?raw=true)
-[view](/lh/assets/images/img0.png)
+![img0](/lh/images/img0.png?raw=true)
+[view](/lh/images/img0.png)
 
 ### Next Steps
 

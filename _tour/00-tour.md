@@ -6,7 +6,7 @@ permalink: /tour/
 
 {% include toc %}
 
-*    Download the [tour notebooks](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/halkypi/lh/blob/gh-pages/docs/notebooks/notebooks.zip)
+*    Download the [tour notebooks](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/halkypi/lh/blob/gh-pages/assets/notebooks/notebooks.zip)
 
 
 virtualenv is used to manage Python packages for different projects. Using virtualenv allows you to avoid installing Python packages globally which could break system tools or other projects. You can install virtualenv using pip.

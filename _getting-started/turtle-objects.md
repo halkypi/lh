@@ -74,7 +74,7 @@ This opens a window and shows the turtle in logo mode.  The motion and drawing c
 
 *    Try this simple example in the Shell
 
-![0](/lh/assets/images/turtle0.png?raw=true)
+![0](/lh/images/turtle0.png?raw=true)
 
 ```
 from turtle import *
@@ -221,7 +221,7 @@ def super_star_group(size):
 
 In the IDLE shell go to: `Help > Turtle Demo` and run through the examples.
 
-![1](/lh/assets/images/turtle1.png?raw=true)
+![1](/lh/images/turtle1.png?raw=true)
 
 ## Debug yinyang.py
 
@@ -245,11 +245,11 @@ In the IDLE shell go to: `Help > Turtle Demo` and run through the examples.
 
 Notice the reset() function is not defined in yinyang.py but turtle.py instead.  To view this file go to `File > Open Module`.
 
-![open-module](/lh/assets/images/open-module.png?raw=true)
+![open-module](/lh/images/open-module.png?raw=true)
 
-![open-module2](/lh/assets/images/open-module2.png?raw=true)
+![open-module2](/lh/images/open-module2.png?raw=true)
 
-![open-module3](/lh/assets/images/open-module3.png?raw=true)
+![open-module3](/lh/images/open-module3.png?raw=true)
 
 *    continue to `step` through the code until the __init__.py file within the tkinter module opens.
 *    use the step `out` button to return to the reset() call and `step` into it again.  
