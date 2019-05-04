@@ -11,7 +11,7 @@ published: true
 For the tour of the scientific packages it is better to use the Miniconda distribution of python.
 
 
-*    Download Miniconda and Install [https://conda.io/projects/conda/en/latest/user-guide/install/macos.html](https://docs.conda.io/en/latest/miniconda.html)
+*    Download Miniconda and Install [https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation)
 
 ```
 bash Miniconda3-latest-MacOSX-x86_64.sh
