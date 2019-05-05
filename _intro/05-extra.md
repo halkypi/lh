@@ -117,4 +117,7 @@ Once this is done, anything downloaded to the Windows `Downloads` directory will
 > Gather, curate, and feature stories of public servants and civic hackers using GitHub as part of their open government innovations [http://government.github.com/](http://government.github.com/).
 
 *    Complete [Introduction to GitHub](https://lab.github.com/githubtraining/introduction-to-github) in learning lab
+*    [simple guide to git](https://rogerdudler.github.io/git-guide/)
+*    [intro video for data scientists](https://youtu.be/EPVwnG-n4B0)
 
+Yes GitHub is basically Blockchain!
