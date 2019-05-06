@@ -16,11 +16,12 @@ For the tour of the scientific packages it is better to use the Miniconda distri
 ```
 bash Miniconda3-latest-MacOSX-x86_64.sh
 ```
-*    Check installation
+*    Check installation (you may have to restart the terminal)
 
 ```
 conda list
 ```
+
 *    Download and unzip the [tour notebooks](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/halkypi/lh/blob/gh-pages/assets/notebooks/notebooks.zip)
 *    Install Core Dependencies
 
