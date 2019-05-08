@@ -29,7 +29,7 @@ feature_row:
   - image_path: wordcloud.jpg
     alt: "Tour of the toolkit"
     title: "Take a tour of the toolkit"
-    excerpt: "Python is extremely well supported by a vibrant open source community.  Not only is it the lingua franca of data science but arguably the second best languge for everything else.  'Think of data science not as a new domain of knowledge to learn, but a new set of skills that you can apply within your current area of expertise.' ~ [Jake VanderPlas](https://jakevdp.github.io/PythonDataScienceHandbook/)"
+    excerpt: "Python is extremely well supported by a vibrant open source community.  Not only is it the lingua franca of data science but arguably the second best language for everything else.  'Think of data science not as a new domain of knowledge to learn, but a new set of skills that you can apply within your current area of expertise.' ~ [Jake VanderPlas](https://jakevdp.github.io/PythonDataScienceHandbook/)"
     url: "/tour/"
     btn_label: "Learn More"
 intro:
