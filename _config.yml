@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "NC Legal Hackers"
+title                    : "legal science"
 title_separator          : "-"
-name                     : "NC Legal Hackers"
+name                     : "legal science"
 description              : "The purpose of this community is to promote equality and access to justice by increasing legal and technical literacy."
 url                      : "https://halkypi.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/lh" # the subpath of your site, e.g. "/blog"
