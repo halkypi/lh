@@ -77,7 +77,7 @@ Click `File > New File`.  You should now have the interpreter (or shell) next to
 ![img0](/lh/images/img0.png?raw=true)
 [view](/lh/images/img0.png)
 
-### Algorithms
+## Algorithms, Binary Search the Number Game
 
 An algorithm is a set of steps or as Cathy O'Neil outlines in her book Weapons of Math Destruction, ["an opinion embedded in code"](https://youtu.be/TQHs8SA1qpk?t=363).
 
@@ -101,6 +101,7 @@ print(f"Well, {name} I am thinking of a number between 1 and 100.")
 
 guess_cnt = 0 # initialize guess count
 
+# Comparison operators, WHILE true and IF true
 while guess_cnt < 7:  # true and false, binary and comparison operator
 
     # Get guess from user and cast to an int
@@ -108,7 +109,7 @@ while guess_cnt < 7:  # true and false, binary and comparison operator
 
     guess_cnt += 1 # increment the count
 
-    # Check the user's guess
+    # IF true,  check the user's guess
     if guess < number:
         print("Your guess is too low.")
     if guess > number:
