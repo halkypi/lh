@@ -77,6 +77,58 @@ Click `File > New File`.  You should now have the interpreter (or shell) next to
 ![img0](/lh/images/img0.png?raw=true)
 [view](/lh/images/img0.png)
 
+### Algorithms
+
+An algorithm is a set of steps or as Cathy O'Neil outlines in her book Weapons of Math Destruction, ["an opinion embedded in code"](https://youtu.be/TQHs8SA1qpk?t=363).
+
+* [https://en.wikipedia.org/wiki/Algorithm](https://en.wikipedia.org/wiki/Algorithm)
+*  [Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](https://www.amazon.com/dp/0553418815/ref=cm_sw_r_tw_dp_U_x_5SmgDbWZ97WZ5)
+*  [Guess the number game](https://inventwithpython.com/chapter4.html)
+
+```py
+# Guess the number game adapted from:
+# https://inventwithpython.com/chapter4.html
+
+import random # import module, try: import this
+
+print("Hello!") 
+name = input("What is your name?\n> ")
+
+number = random.randint(1,100) # https://docs.python.org/3.7/library/random
+
+print(f"Well, {name} I am thinking of a number between 1 and 100.")
+# print(number) # debug statement
+
+guess_cnt = 0 # initialize guess count
+
+while guess_cnt < 7:  # true and false, binary and comparison operator
+
+    # Get guess from user and cast to an int
+    guess = int(input(f"Take a guess (total: {guess_cnt})\n> "))
+
+    guess_cnt += 1 # increment the count
+
+    # Check the user's guess
+    if guess < number:
+        print("Your guess is too low.")
+    if guess > number:
+        print("Your guess is too high.")
+    if guess == number:
+        break
+
+if guess == number:
+    print("Nice!  You guessed it.")
+else:
+    print(f"The number I was thinking of was {number}.")
+
+# How might we:
+# - use binary search?
+# - check the user's input?
+# - ask the user if they want to play again?
+```
+
+*  Harvard's CS50 introduction to binary search [19:58 - 28:20](https://youtu.be/lhlBWlhS7Vg?t=1198)
+
 ### Next Steps
 
 *    Read and complete the exercises in chapters 1 through 6 of [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
