@@ -54,7 +54,7 @@ exit
 
 ![](https://mitpress.mit.edu/sites/default/files/styles/large_book_cover/http/mitp-content-server.mit.edu%3A18180/books/covers/cover/%3Fcollid%3Dbooks_covers_0%26isbn%3D9780262510370%26type%3D.jpg?itok=mTm47Oaz)
 
-## Introduction to [IDLE](https://docs.python.org/3/library/idle.html)
+## [IDLE - Integrated Development and Learning Environment](https://docs.python.org/3/library/idle.html)
 
 Python is named after the 70's comedy show Monty Python so there are many references to famous sketches in 'the docs' and code.  For example, the package manager or [pip](https://packaging.python.org/tutorials/installing-packages/), is commonly referred to as the ['cheese shop'](https://www.youtube.com/results?search_query=cheese+shop+sketch+monty+python).  Most languages have an integrated development environment, or IDE, which programmers use to write and maintain their code.  **Id**l**e** (after [Eric Idle](https://en.wikipedia.org/wiki/Eric_Idle)) is the python one that comes with the standard installation.  Some people prefer [PyCharm](https://www.jetbrains.com/pycharm/) but a text editor (like [notepad++](https://notepad-plus-plus.org/download/v7.6.4.html), [sublime](https://www.sublimetext.com/3) or [vim](https://www.vim.org/download.php)) and the terminal also work well.  [Jupyter notebooks](https://jupyter.org/) are extremely popular with the data science community.  [Amazon SageMaker](https://aws.amazon.com/sagemaker/) comes with Notebooks, machine learning libraries and everything a developer would need to train, build and deploy a solution.
 
