@@ -81,6 +81,8 @@ Click `File > New File`.  You should now have the interpreter (or shell) next to
 
 An algorithm is a set of steps or as Cathy O'Neil outlines in her book Weapons of Math Destruction, ["an opinion embedded in code"](https://youtu.be/TQHs8SA1qpk?t=363).
 
+![](https://en.wikipedia.org/wiki/Algorithm#/media/File:Euclid_flowchart.svg)
+
 * [https://en.wikipedia.org/wiki/Algorithm](https://en.wikipedia.org/wiki/Algorithm)
 *  [Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](https://www.amazon.com/dp/0553418815/ref=cm_sw_r_tw_dp_U_x_5SmgDbWZ97WZ5)
 *  [Guess the number game](https://inventwithpython.com/chapter4.html)
