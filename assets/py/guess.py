@@ -67,7 +67,3 @@ while number != guess:
 ### How might the program be improved from here?
 
 ################################################################################
-
-
-
-
