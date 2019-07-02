@@ -1,14 +1,18 @@
-##import random
-##random.randint(1,5)
-##number = random.randint(1,5)
-##guess = 0
-##number == guess
-##while number != guess:
-##    guess = int(input("\n> "))
+import random
+random.randint(1,5)
+n = random.randint(1,5)
+g = 0
+n == g
+while n != g:
+    g = int(input("\n> "))
 
 ################################################################################
 
 ### This is a comment, what does the program do?
+""" A multi
+    line
+    comment
+"""
 ##import random
 ##number = random.randint(1,10)
 ##
