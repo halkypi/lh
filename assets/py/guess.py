@@ -1,3 +1,4 @@
+## Enter these into the interactive prompt:
 import random
 random.randint(1,5)
 n = random.randint(1,5)
@@ -5,7 +6,7 @@ g = 0
 n == g
 while n != g:
     g = int(input("\n> "))
-
+## Can you describe what each line is doing?
 ################################################################################
 
 ### This is a comment, what does the program do?
