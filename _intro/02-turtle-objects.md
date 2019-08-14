@@ -113,7 +113,7 @@ print("".join([d.get(c, c) for c in s]))
 - Can you describe at a high level what's going on here?
 - If this is confusing check out the [Built in Types](https://docs.python.org/3/library/stdtypes.html) (particularly range and dict) and [Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html)
 
-This is probably still confusing.  See if coming back to this after completing the section debugging below helps.
+This is probably still confusing, complete the section on debugging below and see if that helps.
 
 ## Import turtle
 
