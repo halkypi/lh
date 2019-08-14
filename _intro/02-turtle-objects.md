@@ -111,7 +111,9 @@ for c in (65, 97):
 print("".join([d.get(c, c) for c in s]))
 ```
 - Can you describe at a high level what's going on here?
-- If this is confusing check out the [Built in Types](https://docs.python.org/3/library/stdtypes.html) (particularly range and dict) and [Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html) 
+- If this is confusing check out the [Built in Types](https://docs.python.org/3/library/stdtypes.html) (particularly range and dict) and [Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html)
+
+This is probably still confusing.  See if coming back to this after completing the section debugging below helps.
 
 ## Import turtle
 
@@ -339,6 +341,7 @@ up()
 width()
 ```
 *    Read through [Al's description](http://inventwithpython.com/invent4thed/chapter6.html) of the debugger.
+*    Run the **this** module above through the debugger and see if it makes more sense now
 
 ## Next Steps
 
