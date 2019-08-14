@@ -25,10 +25,10 @@ It is also good to reinforce the principle that it is possible to learn topics o
 
 ## Importing the Zen of python
 
-Python modules or programs are also objects and can imported.  Try:
+Python modules or programs are also objects and can [imported](https://docs.python.org/3/library/importlib.html).  Try:
 
 ```
-import this
+>>>import this
 The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
@@ -51,6 +51,67 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 ```
+Let's look closer at [this](https://inventwithpython.com/blog/2018/08/17/the-zen-of-python-explained/) module:
+
+```
+>>>help(this)
+Help on module this:
+
+NAME
+    this
+
+MODULE REFERENCE
+    https://docs.python.org/3.7/library/this
+
+    The following documentation is automatically generated from the Python
+    source files.  It may be incomplete, incorrect or include features that
+    are considered implementation detail and may vary between Python
+    implementations.  When in doubt, consult the module reference at the
+    location listed above.
+
+DATA
+    c = 97
+    d = {'A': 'N', 'B': 'O', 'C': 'P', 'D': 'Q', 'E': 'R', 'F': 'S', 'G': ...
+    i = 25
+    s = "Gur Mra bs Clguba, ol Gvz Crgref\n\nOrnhgvshy vf o...bar ubaxvat ...
+
+FILE
+    /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/this.py
+```
+Copy the FILE location to the clipboard and navigate to that file:
+
+```
+s = """Gur Mra bs Clguba, ol Gvz Crgref
+
+Ornhgvshy vf orggre guna htyl.
+Rkcyvpvg vf orggre guna vzcyvpvg.
+Fvzcyr vf orggre guna pbzcyrk.
+Pbzcyrk vf orggre guna pbzcyvpngrq.
+Syng vf orggre guna arfgrq.
+Fcnefr vf orggre guna qrafr.
+Ernqnovyvgl pbhagf.
+Fcrpvny pnfrf nera'g fcrpvny rabhtu gb oernx gur ehyrf.
+Nygubhtu cenpgvpnyvgl orngf chevgl.
+Reebef fubhyq arire cnff fvyragyl.
+Hayrff rkcyvpvgyl fvyraprq.
+Va gur snpr bs nzovthvgl, ershfr gur grzcgngvba gb thrff.
+Gurer fubhyq or bar-- naq cersrenoyl bayl bar --boivbhf jnl gb qb vg.
+Nygubhtu gung jnl znl abg or boivbhf ng svefg hayrff lbh'er Qhgpu.
+Abj vf orggre guna arire.
+Nygubhtu arire vf bsgra orggre guna *evtug* abj.
+Vs gur vzcyrzragngvba vf uneq gb rkcynva, vg'f n onq vqrn.
+Vs gur vzcyrzragngvba vf rnfl gb rkcynva, vg znl or n tbbq vqrn.
+Anzrfcnprf ner bar ubaxvat terng vqrn -- yrg'f qb zber bs gubfr!"""
+
+d = {}
+for c in (65, 97):
+    for i in range(26):
+        d[chr(i+c)] = chr((i+13) % 26 + c)
+
+print("".join([d.get(c, c) for c in s]))
+```
+- Can you describe at a high level what's going on here?
+- If this is confusing check out the [Built in Types](https://docs.python.org/3/library/stdtypes.html) (particularly range and dict) and [Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html) 
 
 ## Import turtle
 
