@@ -1,5 +1,5 @@
 ---
-title:  "Welcome to openpgp.org"
+title:  "test"
 author: Dominik Schuermann
 categories: 
   - Website
