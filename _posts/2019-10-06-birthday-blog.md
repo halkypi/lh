@@ -12,3 +12,7 @@ I've decided to start a blog for the fun stuff I get up to.  For my birthday I'm
 Here's the route:
 
 <div style="background-color:#fff;"> <iframe src="http://www.wandermap.net/en/route/3608595-falls-lake-to-bond-lake/widget/?width=425&amp;height=350&amp;unit=metric" width="425" height="350" border="0" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"> </iframe> <div style="margin: -4px 0 0 5px; height: 16px; color: #000; font-family: sans-serif; font-size: 12px;"> Route <a href="http://www.wandermap.net/en/route/3608595-falls-lake-to-bond-lake/" style="color:#2a88ac; text-decoration:underline;" target="_blank">3,608,595</a> - powered by <a href="http://www.wandermap.net" style="color:#2a88ac; text-decoration:underline;" target="_blank">www.wandermap.net</a> </div> </div>
+
+Next embed:
+
+<iframe width='135' height='510' src='http://www.wandermap.net/en/user/halkypi/widget/' border='0' frameborder='0' marginheight='0' marginwidth='0' scrolling='no'></iframe>
