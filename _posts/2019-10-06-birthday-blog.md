@@ -1,5 +1,5 @@
 ---
-title:  "Starting a blog for fun stuff"
+title:  "Birthday Blog"
 author: Scott H
 categories: 
   - Hiking
