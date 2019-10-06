@@ -11,5 +11,4 @@ I've decided to start a blog for the fun stuff I get up to.  For my birthday I'm
 
 Here's the [route:](http://www.wandermap.net/en/route/3608595-falls-lake-to-bond-lake/)
 
-![]()
 ![](/lh/images/falls-lake-bond=-lake.png)
