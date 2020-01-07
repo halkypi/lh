@@ -37,7 +37,8 @@
 .archive__item-title {
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
-
+  display:block;
+  
   a & { color:#000; }
   
   a + a {
