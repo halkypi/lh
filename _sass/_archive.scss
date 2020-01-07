@@ -38,7 +38,7 @@
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
 
-  &a { color:#000; }
+  a & { color:#000; }
   
   a + a {
     opacity: 0.5;
