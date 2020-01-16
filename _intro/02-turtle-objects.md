@@ -351,6 +351,6 @@ There are many, many [excellent books](https://wiki.python.org/moin/PythonBooks)
 *    Get into Linux too, there is no avoiding that either
 *    Check out the Software Carpentry Foundation: [https://swcarpentry.github.io/shell-novice/](https://swcarpentry.github.io/shell-novice/)
 
-![command-line](https://img.photobucket.com/albums/v647/vtel57/NSBLog/cli-fear_shot.jpg)
+![command-line](/lh/images/cli.jpg?raw=true)
 
 
